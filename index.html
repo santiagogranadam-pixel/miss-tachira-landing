@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="description" content="MISS TACHIRA - 2008 Azimut 43 Flybridge, Cartagena, Colombia. AS IS refit opportunity, USD 145,000.">
+<meta name="description" content="MISS TACHIRA - 2008 Azimut 43 Flybridge, Cartagena, Colombia. USD 145,000.">
 <title>Miss Tachira</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,8 +77,8 @@
   [hidden]{ display:none !important; }
 
   .wrap{ max-width:1080px; margin:0 auto; padding-inline:20px; }
-  section{ padding-block: 64px; }
-  @media (max-width:640px){ section{ padding-block:44px; } }
+  section{ padding-block: 56px; }
+  @media (max-width:640px){ section{ padding-block:40px; } }
 
   /* thin persistent bar */
   .topbar{
@@ -116,9 +116,9 @@
   }
   .hero-scrim{
     position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(10,16,20,.15) 0%, rgba(10,16,20,.35) 45%, rgba(9,14,17,.92) 100%);
+    background:linear-gradient(180deg, rgba(10,16,20,.12) 0%, rgba(10,16,20,.32) 45%, rgba(9,14,17,.90) 100%);
   }
-  .hero-content{ position:relative; z-index:2; color:#f2ede0; width:100%; padding-block:56px 40px; }
+  .hero-content{ position:relative; z-index:2; color:#f2ede0; width:100%; padding-block:56px 44px; }
   .eyebrow{
     font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase;
     color:var(--gold); display:flex; align-items:center; gap:8px; margin-bottom:14px;
@@ -127,29 +127,19 @@
   .hero .sub{ font-family:"Fraunces",serif; font-weight:500; font-size:clamp(16px,2.4vw,20px); color:#cfd6db; margin-top:8px; }
   .hero-meta{ display:flex; flex-wrap:wrap; gap:10px 22px; align-items:baseline; margin-top:26px; }
   .price-big{ font-family:"IBM Plex Mono",monospace; font-size:clamp(28px,5vw,40px); font-weight:600; color:#f7f3e6; letter-spacing:-.01em; }
-  .offers-line{ font-family:"Fraunces",serif; font-style:italic; font-weight:600; color:var(--gold); font-size:17px; }
-  .asis-flag{
-    margin-top:22px; padding:12px 16px; border:1px solid rgba(198,128,100,.55); background:rgba(138,74,58,.18);
-    border-radius:2px; font-size:14.5px; color:#f0dcd2; max-width:640px;
+  .disclose-line{
+    margin-top:18px; font-size:13.5px; color:#c7cdd0; font-family:"IBM Plex Mono",monospace; max-width:560px; line-height:1.5;
   }
-  .asis-flag b{ color:#e3b39e; }
-  .cta-row{ display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+  .cta-row{ display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
   .cta{
-    font-family:"Public Sans",sans-serif; font-weight:600; font-size:14.5px;
-    padding:13px 22px; border-radius:2px; cursor:pointer; text-decoration:none;
+    font-family:"Public Sans",sans-serif; font-weight:600; font-size:15px;
+    padding:14px 24px; border-radius:2px; cursor:pointer; text-decoration:none;
     display:inline-flex; align-items:center; gap:9px; border:1px solid transparent;
     transition:opacity .15s ease, background-color .15s ease;
   }
   .cta-primary{ background:var(--brass); color:#1a1108; }
   .cta-primary:hover{ background:var(--brass-strong); }
-  .cta-secondary{ border-color:rgba(242,237,224,.45); color:#f2ede0; background:transparent; }
-  .cta-secondary:hover{ background:rgba(242,237,224,.1); }
   .cta svg{ flex:none; }
-  .email-note{
-    margin-top:12px; font-size:12.5px; font-family:"IBM Plex Mono",monospace; letter-spacing:.01em;
-  }
-  .email-note.on-dark{ color:#b9c2c6; }
-  .email-note.on-light{ color:var(--ink-soft); }
 
   /* dashed divider */
   .sounding{ height:1px; background-image: repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 14px); }
@@ -157,18 +147,17 @@
   /* section header */
   .kicker{ font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--brass-strong); margin-bottom:10px; }
   .lede{ font-size:18px; max-width:64ch; color:var(--ink-soft); }
-  h2.title{ font-size:clamp(26px,4vw,34px); max-width:22ch; }
+  h2.title{ font-size:clamp(24px,4vw,32px); max-width:22ch; }
 
   /* opportunity */
-  .op-grid{ display:grid; grid-template-columns:1.1fr .9fr; gap:48px; margin-top:28px; }
-  @media (max-width:760px){ .op-grid{ grid-template-columns:1fr; } }
-  .op-list{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:16px; }
+  .op-grid{ margin-top:22px; }
+  .op-list{ list-style:none; padding:0; margin:18px 0 0; display:flex; flex-direction:column; gap:12px; }
   .op-list li{ display:flex; gap:12px; font-size:15.5px; color:var(--ink-soft); }
   .op-list li::before{ content:"—"; color:var(--brass); flex:none; }
 
   /* particulars table */
   .particulars-card{
-    background:var(--card); border:1px solid var(--line); border-radius:3px; overflow:hidden; margin-top:26px;
+    background:var(--card); border:1px solid var(--line); border-radius:3px; overflow:hidden; margin-top:22px;
   }
   table.spec{ width:100%; border-collapse:collapse; }
   table.spec tr{ border-top:1px solid var(--line); }
@@ -176,10 +165,9 @@
   table.spec td{ padding:13px 18px; font-size:14.5px; vertical-align:top; }
   table.spec td:first-child{ color:var(--ink-soft); width:38%; font-family:"IBM Plex Mono",monospace; font-size:12.5px; letter-spacing:.02em; text-transform:uppercase; }
   table.spec td:last-child{ font-family:"IBM Plex Mono",monospace; font-size:14px; }
-  .foot-note{ font-size:13px; color:var(--ink-soft); margin-top:14px; }
 
   /* gallery */
-  .gal-groups{ margin-top:30px; }
+  .gal-groups{ margin-top:26px; }
   .gal-group{ margin-top:36px; }
   .gal-group:first-child{ margin-top:0; }
   .gal-group-label{
@@ -196,50 +184,19 @@
   figure.gal .frame.tall{ aspect-ratio:3/4; }
   figure.gal img{ width:100%; height:100%; object-fit:cover; }
   figure.gal figcaption{ font-size:12px; color:var(--ink-soft); margin-top:7px; font-family:"IBM Plex Mono",monospace; letter-spacing:.01em; }
-  .gallery-note{
-    margin-top:24px; padding:14px 16px; border-left:2px solid var(--brass); font-size:13.5px; color:var(--ink-soft); max-width:70ch;
-  }
 
-  /* condition / ship's log */
+  /* condition note */
   .log-section{ background:var(--navy); color:#e7e2d2; }
   .log-section .kicker{ color:var(--gold); }
   .log-section h2.title{ color:#f5f1e4; }
-  .log-section .lede{ color:#c3cdd3; }
-  .log-body{ margin-top:24px; display:grid; grid-template-columns:1.2fr .8fr; gap:36px; }
-  @media (max-width:760px){ .log-body{ grid-template-columns:1fr; } }
-  .log-text p{ font-size:15px; color:#d3d8da; margin:0 0 16px; }
-  .log-text p:last-child{ margin-bottom:0; }
-  .log-text .strong-line{ font-family:"Fraunces",serif; font-style:italic; font-size:17px; color:#f0dcd2; border-top:1px solid rgba(231,226,210,.18); padding-top:16px; margin-top:20px; }
-  .tech-imgs{ display:flex; flex-direction:column; gap:16px; }
-  .tech-imgs figure{ margin:0; background:rgba(0,0,0,.18); border:1px solid rgba(231,226,210,.14); border-radius:2px; overflow:hidden; }
-  .tech-imgs img{ width:100%; display:block; }
-  .tech-imgs figcaption{ padding:10px 12px; font-size:12px; color:#b9c2c6; font-family:"IBM Plex Mono",monospace; line-height:1.45; }
-
-  /* documentation */
-  .doc-grid{ display:grid; grid-template-columns:1fr 1fr; gap:32px; margin-top:26px; }
-  @media (max-width:760px){ .doc-grid{ grid-template-columns:1fr; } }
-  .doc-card{ background:var(--card); border:1px solid var(--line); border-radius:3px; padding:22px; }
-  .doc-card h3{ font-size:16px; margin-bottom:10px; }
-  .doc-card p{ font-size:14.5px; color:var(--ink-soft); margin:0; }
+  .log-section p{ font-size:15.5px; color:#d3d8da; margin:14px 0 0; max-width:70ch; }
 
   /* closing cta */
   .closing{ background:var(--navy-deep); color:#f0ede0; }
   .closing .wrap{ text-align:left; }
   .closing h2.title{ color:#f7f3e6; }
   .closing .price-line{ font-family:"IBM Plex Mono",monospace; font-size:clamp(26px,4.5vw,36px); margin-top:10px; color:#f7f3e6; }
-  .closing .offers-line{ margin-top:2px; }
-  .msg-box{
-    margin-top:26px; max-width:620px; background:rgba(236,230,214,.06); border:1px solid rgba(236,230,214,.18);
-    border-radius:3px; padding:16px 18px;
-  }
-  .msg-box .lbl{ font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
-  .msg-box p{ font-size:14.5px; color:#dfe3e2; margin:0; }
-  .copy-btn{
-    margin-top:12px; font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:13px; background:transparent; color:var(--gold);
-    border:1px solid rgba(238,201,138,.55); padding:7px 12px; border-radius:2px; cursor:pointer;
-  }
-  .copy-btn:hover{ background:rgba(238,201,138,.14); }
-  .copy-btn:focus-visible, .cta:focus-visible, a:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
+  .cta:focus-visible, a:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
 
   footer{ padding-block:32px calc(32px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--line); }
   footer .wrap{ display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; font-size:12.5px; color:var(--ink-soft); }
@@ -274,35 +231,25 @@
       2008 Azimut 43 Flybridge · Cartagena, Colombia
     </div>
     <h1>MISS TACHIRA</h1>
-    <div class="sub" data-lang="en">An AS IS refit opportunity for a technically capable buyer.</div>
-    <div class="sub" data-lang="es" hidden>Una oportunidad de refit AS IS para un comprador con capacidad técnica.</div>
+    <div class="sub" data-lang="en">Azimut flybridge styling and refreshed interiors, in Cartagena.</div>
+    <div class="sub" data-lang="es" hidden>Estilo flybridge Azimut e interiores renovados, en Cartagena.</div>
     <div class="hero-meta">
       <div class="price-big">USD 145,000</div>
-      <div class="offers-line" data-lang="en">Serious offers considered.</div>
-      <div class="offers-line" data-lang="es" hidden>Se consideran ofertas serias.</div>
     </div>
-    <div class="asis-flag" data-lang="en">
-      <b>Both main engines are out of service and partially disassembled.</b> This is an AS IS project, sold where is, not a turn-key or cruise-ready yacht.
-    </div>
-    <div class="asis-flag" data-lang="es" hidden>
-      <b>Ambos motores principales están fuera de servicio y parcialmente desarmados.</b> Este es un proyecto AS IS, vendido en el estado y lugar en que se encuentra, no un yate llave en mano ni listo para navegar.
-    </div>
+    <div class="disclose-line" data-lang="en">Requires work on the propulsion system and some equipment before returning to navigation — reflected in the price.</div>
+    <div class="disclose-line" data-lang="es" hidden>Requiere trabajo en el sistema de propulsión y algunos equipos antes de volver a navegar — reflejado en el precio.</div>
     <div class="cta-row" data-lang="en">
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hello%2C%20I%20am%20interested%20in%20MISS%20TACHIRA%2C%20the%202008%20Azimut%2043%20offered%20AS%20IS%20at%20USD%20145%2C000.%20I%20understand%20that%20the%20engines%20are%20non-operational.%20Please%20share%20the%20condition%20details%20and%20inspection%20availability." target="_blank" rel="noopener">
+      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
         Discuss on WhatsApp
       </a>
-      <a class="cta cta-secondary" href="https://wa.me/573222481135?text=Hello%2C%20I%27m%20interested%20in%20MISS%20TACHIRA%20%282008%20Azimut%2043%2C%20Cartagena%2C%20USD%20145%2C000%2C%20AS%20IS%29.%20Could%20you%20send%20me%20the%20full%20condition%20report%20and%20additional%20photos%3F" target="_blank" rel="noopener">Request the condition details</a>
     </div>
     <div class="cta-row" data-lang="es" hidden>
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hola%2C%20estoy%20interesado%20en%20MISS%20TACHIRA%2C%20el%20Azimut%2043%20de%202008%20ofrecido%20AS%20IS%20en%20USD%20145%2C000.%20Entiendo%20que%20los%20motores%20no%20est%C3%A1n%20operativos.%20Por%20favor%20comp%C3%A1rtanme%20los%20detalles%20del%20estado%20y%20la%20disponibilidad%20para%20inspecci%C3%B3n." target="_blank" rel="noopener">
+      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
         Hablar por WhatsApp
       </a>
-      <a class="cta cta-secondary" href="https://wa.me/573222481135?text=Hola%2C%20estoy%20interesado%20en%20MISS%20TACHIRA%20%28Azimut%2043%20de%202008%2C%20Cartagena%2C%20USD%20145%2C000%2C%20AS%20IS%29.%20%C2%BFPodr%C3%ADan%20enviarme%20el%20informe%20de%20estado%20completo%20y%20fotos%20adicionales%3F" target="_blank" rel="noopener">Solicitar el informe de estado</a>
     </div>
-    <div class="email-note on-dark" data-lang="en">Email: [MISS TACHIRA sales email — pending setup]</div>
-    <div class="email-note on-dark" data-lang="es" hidden>Correo: [correo de ventas de MISS TACHIRA — pendiente de configurar]</div>
   </div>
 </section>
 
@@ -312,67 +259,53 @@
   <div class="wrap">
     <div class="kicker" data-lang="en">The opportunity</div>
     <div class="kicker" data-lang="es" hidden>La oportunidad</div>
-    <h2 class="title" data-lang="en">Why take a closer look</h2>
-    <h2 class="title" data-lang="es" hidden>Por qué vale la pena revisarla de cerca</h2>
+    <h2 class="title" data-lang="en">A flybridge Azimut in Cartagena</h2>
+    <h2 class="title" data-lang="es" hidden>Un flybridge Azimut en Cartagena</h2>
     <div class="op-grid">
-      <p class="lede" data-lang="en">MISS TACHIRA combines Azimut flybridge styling with refurbished accommodation spaces, offered transparently in her current, non-operational condition — for the buyer equipped to assess the work and make the next chapter their own.</p>
-      <p class="lede" data-lang="es" hidden>MISS TACHIRA combina el estilo flybridge de Azimut con espacios de alojamiento renovados, ofrecida con total transparencia en su estado actual no operativo — para el comprador preparado para evaluar el trabajo pendiente y hacer suyo el próximo capítulo.</p>
       <ul class="op-list" data-lang="en">
-        <li>Azimut 43 Flybridge, built in 2008, located in Cartagena, Colombia.</li>
-        <li>Refurbished interiors and galley, with limited subsequent use reported in the July 2026 condition report.</li>
-        <li>Hull reported in very good visible condition; antifouling reported completed in May 2026. Independent survey invited.</li>
-        <li>Accommodation services and air conditioning reported operating on shore power; freezer reported tested and functioning.</li>
-        <li>An opportunity for a technically capable buyer to evaluate repair, refit or repower against their own scope and budget.</li>
+        <li>Azimut 43 Flybridge, built 2008, located in Cartagena, Colombia.</li>
+        <li>Refreshed interiors and galley.</li>
+        <li>Hull in very good visible condition; antifouling done May 2026.</li>
+        <li>Shore power, air conditioning and freezer in use.</li>
       </ul>
       <ul class="op-list" data-lang="es" hidden>
-        <li>Azimut 43 Flybridge, construido en 2008, ubicado en Cartagena, Colombia.</li>
-        <li>Interiores y cocina renovados, con uso posterior limitado según el informe de estado de julio de 2026.</li>
-        <li>Casco reportado en muy buen estado visible; antifouling reportado como completado en mayo de 2026. Se invita a realizar un peritaje independiente.</li>
-        <li>Servicios de habitabilidad y aire acondicionado reportados como operativos con conexión a tierra; congelador reportado como probado y funcional.</li>
-        <li>Una oportunidad para que un comprador con capacidad técnica evalúe la reparación, el refit o el repotenciamiento según su propio alcance y presupuesto.</li>
+        <li>Azimut 43 Flybridge, construido en 2008, en Cartagena, Colombia.</li>
+        <li>Interiores y cocina renovados.</li>
+        <li>Casco en muy buen estado visible; antifouling hecho en mayo de 2026.</li>
+        <li>Conexión a tierra, aire acondicionado y congelador en uso.</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="particulars" style="background:var(--paper-2); padding-block:56px;">
+<section id="particulars" style="background:var(--paper-2); padding-block:48px;">
   <div class="wrap">
     <div class="kicker" data-lang="en">Key particulars</div>
     <div class="kicker" data-lang="es" hidden>Datos clave</div>
-    <h2 class="title" style="font-size:22px;" data-lang="en">Verified specifications</h2>
-    <h2 class="title" style="font-size:22px;" data-lang="es" hidden>Especificaciones verificadas</h2>
+    <h2 class="title" style="font-size:22px;" data-lang="en">Specifications</h2>
+    <h2 class="title" style="font-size:22px;" data-lang="es" hidden>Especificaciones</h2>
     <div class="particulars-card">
       <table class="spec" data-lang="en">
         <tr><td>Model / year</td><td>Azimut 43 Flybridge / 2008</td></tr>
-        <tr><td>Name</td><td>MISS TACHIRA</td></tr>
         <tr><td>Location</td><td>Cartagena, Colombia</td></tr>
-        <tr><td>Hull</td><td>Fiberglass</td></tr>
-        <tr><td>Registered hull length</td><td>12.92 m</td></tr>
+        <tr><td>Hull</td><td>Fiberglass, 12.92 m</td></tr>
         <tr><td>Beam</td><td>4.20 m</td></tr>
-        <tr><td>Engines installed</td><td>2 × Cummins QSB5.9-425 HO, diesel</td></tr>
-        <tr><td>Documented power</td><td>420 HP each / 840 HP total — not current measured output</td></tr>
-        <tr><td>Transmissions</td><td>ZF 85 IV, 2.0:1 — operation untested</td></tr>
-        <tr><td>Engine hours</td><td>Unknown / unconfirmed</td></tr>
-        <tr><td>Sale condition</td><td>AS IS / non-operational</td></tr>
+        <tr><td>Engines</td><td>2 × Cummins QSB5.9-425 HO, diesel</td></tr>
+        <tr><td>Power (documented)</td><td>420 HP each / 840 HP total</td></tr>
+        <tr><td>Engine hours</td><td>Unknown</td></tr>
         <tr><td>Asking price</td><td>USD 145,000</td></tr>
       </table>
       <table class="spec" data-lang="es" hidden>
         <tr><td>Modelo / año</td><td>Azimut 43 Flybridge / 2008</td></tr>
-        <tr><td>Nombre</td><td>MISS TACHIRA</td></tr>
         <tr><td>Ubicación</td><td>Cartagena, Colombia</td></tr>
-        <tr><td>Casco</td><td>Fibra de vidrio</td></tr>
-        <tr><td>Eslora de casco registrada</td><td>12.92 m</td></tr>
+        <tr><td>Casco</td><td>Fibra de vidrio, 12.92 m</td></tr>
         <tr><td>Manga</td><td>4.20 m</td></tr>
-        <tr><td>Motores instalados</td><td>2 × Cummins QSB5.9-425 HO, diésel</td></tr>
-        <tr><td>Potencia documentada</td><td>420 HP cada uno / 840 HP total — no corresponde a una medición actual</td></tr>
-        <tr><td>Transmisiones</td><td>ZF 85 IV, 2.0:1 — funcionamiento no probado</td></tr>
-        <tr><td>Horas de motor</td><td>Desconocidas / no confirmadas</td></tr>
-        <tr><td>Condición de venta</td><td>AS IS / no operativo</td></tr>
+        <tr><td>Motores</td><td>2 × Cummins QSB5.9-425 HO, diésel</td></tr>
+        <tr><td>Potencia (documentada)</td><td>420 HP cada uno / 840 HP total</td></tr>
+        <tr><td>Horas de motor</td><td>Desconocidas</td></tr>
         <tr><td>Precio solicitado</td><td>USD 145,000</td></tr>
       </table>
     </div>
-    <p class="foot-note" data-lang="en">&ldquo;Documented&rdquo; means supported by the vessel's technical records, not independently re-surveyed for this listing. Figures not shown above — draft, tonnage, engine hours — remain unconfirmed and are withheld rather than estimated.</p>
-    <p class="foot-note" data-lang="es" hidden>&ldquo;Documentado&rdquo; significa respaldado por los registros técnicos de la embarcación, no verificado de forma independiente para este anuncio. Las cifras no mostradas arriba — calado, tonelaje, horas de motor — permanecen sin confirmar y se omiten en lugar de estimarse.</p>
   </div>
 </section>
 
@@ -388,19 +321,9 @@
         <div class="gal-group-label" data-lang="en">Exterior</div>
         <div class="gal-group-label" data-lang="es" hidden>Exterior</div>
         <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/01_exterior_principal_estribor.jpg" alt="Starboard side profile, marina"></div><figcaption><span data-lang="en">Exterior — starboard profile</span><span data-lang="es" hidden>Exterior — perfil de estribor</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/01_exterior_principal_estribor.jpg" alt="Starboard side profile, marina"></div><figcaption><span data-lang="en">Starboard profile</span><span data-lang="es" hidden>Perfil de estribor</span></figcaption></figure>
           <figure class="gal"><div class="frame"><img src="img/03_proa.jpg" alt="Bow"></div><figcaption><span data-lang="en">Bow</span><span data-lang="es" hidden>Proa</span></figcaption></figure>
-        </div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame tall"><img src="img/15_pasillo_exterior_estribor.jpg" alt="Starboard side deck"></div><figcaption><span data-lang="en">Starboard side deck</span><span data-lang="es" hidden>Pasillo exterior de estribor</span></figcaption></figure>
-        </div>
-      </div>
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Cockpit / Aft deck</div>
-        <div class="gal-group-label" data-lang="es" hidden>Cockpit / cubierta de popa</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame tall"><img src="img/02_popa.jpg" alt="Stern and swim platform"></div><figcaption><span data-lang="en">Stern &amp; swim platform</span><span data-lang="es" hidden>Popa y plataforma de baño</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/02_popa.jpg" alt="Stern and swim platform"></div><figcaption><span data-lang="en">Stern &amp; swim platform</span><span data-lang="es" hidden>Popa y plataforma de baño</span></figcaption></figure>
         </div>
       </div>
 
@@ -408,7 +331,8 @@
         <div class="gal-group-label" data-lang="en">Flybridge</div>
         <div class="gal-group-label" data-lang="es" hidden>Flybridge</div>
         <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/08_flybridge.jpg" alt="Flybridge"></div><figcaption><span data-lang="en">Flybridge — seating wear &amp; enclosure clouding visible</span><span data-lang="es" hidden>Flybridge — desgaste visible en tapicería y opacidad en el cerramiento</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/08_flybridge.jpg" alt="Flybridge"></div><figcaption><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/15_pasillo_exterior_estribor.jpg" alt="Starboard side deck"></div><figcaption><span data-lang="en">Side deck</span><span data-lang="es" hidden>Pasillo exterior</span></figcaption></figure>
         </div>
       </div>
 
@@ -416,9 +340,9 @@
         <div class="gal-group-label" data-lang="en">Salon</div>
         <div class="gal-group-label" data-lang="es" hidden>Salón</div>
         <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/04_salon_hacia_popa.jpg" alt="Salon, view aft"></div><figcaption><span data-lang="en">Salon — aft view</span><span data-lang="es" hidden>Salón — vista hacia popa</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/05_salon_hacia_mando.jpg" alt="Salon toward helm"></div><figcaption><span data-lang="en">Salon — toward helm</span><span data-lang="es" hidden>Salón — hacia el puesto de mando</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/07_mando.jpg" alt="Lower helm station"></div><figcaption><span data-lang="en">Helm — navigation not operational</span><span data-lang="es" hidden>Puesto de mando — navegación no operativa</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/04_salon_hacia_popa.jpg" alt="Salon, view aft"></div><figcaption><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/05_salon_hacia_mando.jpg" alt="Salon toward helm"></div><figcaption><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/07_mando.jpg" alt="Lower helm station"></div><figcaption><span data-lang="en">Helm station</span><span data-lang="es" hidden>Puesto de mando</span></figcaption></figure>
         </div>
         <div class="gal-row">
           <figure class="gal"><div class="frame tall"><img src="img/06_salon_babor.jpg" alt="Salon, port side"></div><figcaption><span data-lang="en">Salon — port side</span><span data-lang="es" hidden>Salón — banda de babor</span></figcaption></figure>
@@ -430,7 +354,7 @@
         <div class="gal-group-label" data-lang="es" hidden>Cocina</div>
         <div class="gal-row">
           <figure class="gal"><div class="frame"><img src="img/09_cocina.jpg" alt="Galley"></div><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/10_cocina_vista_general.jpg" alt="Galley, general view"></div><figcaption><span data-lang="en">Galley — layout &amp; access</span><span data-lang="es" hidden>Cocina — distribución y acceso</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/10_cocina_vista_general.jpg" alt="Galley, general view"></div><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure>
         </div>
       </div>
 
@@ -439,7 +363,7 @@
         <div class="gal-group-label" data-lang="es" hidden>Camarotes</div>
         <div class="gal-row">
           <figure class="gal"><div class="frame"><img src="img/11_cabina.jpg" alt="Cabin"></div><figcaption><span data-lang="en">Cabin</span><span data-lang="es" hidden>Camarote</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/12_cabina_almacenamiento.jpg" alt="Cabin storage"></div><figcaption><span data-lang="en">Cabin — storage</span><span data-lang="es" hidden>Camarote — almacenamiento</span></figcaption></figure>
+          <figure class="gal"><div class="frame"><img src="img/12_cabina_almacenamiento.jpg" alt="Cabin storage"></div><figcaption><span data-lang="en">Cabin</span><span data-lang="es" hidden>Camarote</span></figcaption></figure>
         </div>
       </div>
 
@@ -448,15 +372,11 @@
         <div class="gal-group-label" data-lang="es" hidden>Baños</div>
         <div class="gal-row">
           <figure class="gal"><div class="frame tall"><img src="img/13_bano.jpg" alt="Head"></div><figcaption><span data-lang="en">Head</span><span data-lang="es" hidden>Baño</span></figcaption></figure>
-          <figure class="gal"><div class="frame tall"><img src="img/14_ducha.jpg" alt="Shower detail"></div><figcaption><span data-lang="en">Head — shower detail</span><span data-lang="es" hidden>Baño — detalle de la ducha</span></figcaption></figure>
+          <figure class="gal"><div class="frame tall"><img src="img/14_ducha.jpg" alt="Shower detail"></div><figcaption><span data-lang="en">Head</span><span data-lang="es" hidden>Baño</span></figcaption></figure>
         </div>
       </div>
 
     </div>
-    <p class="foot-note" style="margin-top:8px;" data-lang="en">Engine compartment and technical condition photos appear in the <a href="#condition" style="color:var(--brass-strong); text-decoration:underline;">Current condition</a> section below, alongside their disclosure notes.</p>
-    <p class="foot-note" style="margin-top:8px;" data-lang="es" hidden>Las fotos del compartimento de motores y del estado técnico aparecen en la sección <a href="#condition" style="color:var(--brass-strong); text-decoration:underline;">Estado actual</a>, junto con sus notas de divulgación.</p>
-    <p class="gallery-note" data-lang="en">Selected marketing photos have been digitally decluttered and adjusted for light. Unedited reference images are available on request. Photos do not establish operational condition.</p>
-    <p class="gallery-note" data-lang="es" hidden>Algunas fotos de marketing fueron ordenadas digitalmente y ajustadas de luz. Las imágenes de referencia sin editar están disponibles a solicitud. Las fotos no establecen el estado operativo.</p>
   </div>
 </section>
 
@@ -464,65 +384,12 @@
 
 <section class="log-section" id="condition">
   <div class="wrap">
-    <div class="kicker" data-lang="en">Current condition</div>
-    <div class="kicker" data-lang="es" hidden>Estado actual</div>
-    <h2 class="title" data-lang="en">Understand the project before you visit</h2>
-    <h2 class="title" data-lang="es" hidden>Entienda el proyecto antes de visitarla</h2>
-    <div class="log-body">
-      <div class="log-text" data-lang="en">
-        <p>Both engines are out of service and partially disassembled. Injectors have been removed and are not validated for reinstatement. No engine start, load test or sea trial was performed during the July inspection. Engine hours are unknown.</p>
-        <p>The propellers physically exist, but are removed and in poor condition; replacement is expected for regular operation. Navigation equipment is not available for operation, and the autopilot is reported nonfunctional. Engine electronics and connected systems require further diagnosis. The final repair scope, cost and duration have not been established.</p>
-        <p>Cosmetic wear remains, including marks on flybridge seating and cloudy/discolored clear enclosure panels. The condition report lists no refrigerator, no TVs and no installed sound system included; the freezer is separate. Generator operation has not been verified in the recovered inspection records.</p>
-        <p class="strong-line">Read the condition disclosure. Bring your own surveyor and technical team.</p>
-      </div>
-      <div class="log-text" data-lang="es" hidden>
-        <p>Ambos motores están fuera de servicio y parcialmente desarmados. Los inyectores fueron retirados y no están validados para su reinstalación. Durante la inspección de julio no se realizó arranque de motor, prueba de carga ni prueba de mar. Las horas de motor se desconocen.</p>
-        <p>Las hélices existen físicamente, pero están retiradas y en mal estado; se espera su reemplazo para la operación regular. El equipo de navegación no está disponible para uso, y el piloto automático se reporta no funcional. La electrónica de motor y los sistemas conectados requieren diagnóstico adicional. El alcance final de la reparación, su costo y duración aún no se han establecido.</p>
-        <p>Persiste desgaste estético, incluyendo marcas en la tapicería del flybridge y paneles del cerramiento opacos/descoloridos. El informe de estado no incluye refrigerador, televisores ni sistema de sonido instalado; el congelador es un equipo aparte. El funcionamiento del generador no ha sido verificado en los registros de inspección recuperados.</p>
-        <p class="strong-line">Lea la divulgación de estado. Traiga su propio perito y equipo técnico.</p>
-      </div>
-      <div class="tech-imgs">
-        <figure>
-          <img src="img/01_motores_estado_actual.jpg" alt="Engine disassembly, July 2026 condition report">
-          <figcaption data-lang="en">Engine disassembly shown in the July 2026 condition report. Engines are disclosed as non-operational; this is not a new inspection.</figcaption>
-          <figcaption data-lang="es" hidden>Desarme de motores mostrado en el informe de estado de julio de 2026. Los motores se declaran como no operativos; esta no es una nueva inspección.</figcaption>
-        </figure>
-        <figure>
-          <img src="img/02_inyectores_retirados.jpg" alt="Removed injectors, July 2026 condition report">
-          <figcaption data-lang="en">Removed injectors shown in the July 2026 report. Compatibility and readiness for reinstatement remain unvalidated.</figcaption>
-          <figcaption data-lang="es" hidden>Inyectores retirados mostrados en el informe de julio de 2026. La compatibilidad y la viabilidad de reinstalación permanecen sin validar.</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="documentation" style="background:var(--paper-2);">
-  <div class="wrap">
-    <div class="kicker" data-lang="en">Documentation &amp; inspection</div>
-    <div class="kicker" data-lang="es" hidden>Documentación e inspección</div>
-    <h2 class="title" style="font-size:24px;" data-lang="en">What's available for due diligence</h2>
-    <h2 class="title" style="font-size:24px;" data-lang="es" hidden>Qué está disponible para el due diligence</h2>
-    <div class="doc-grid" data-lang="en">
-      <div class="doc-card">
-        <h3>Documentation</h3>
-        <p>Registration and supporting documents are available for private due diligence. DIAN Auto 7349 grants temporary tourist-importation permanence through <strong>11 December 2026</strong>, with a reexportation obligation by the applicable deadline. A separate renewed DIMAR permit has not been verified in the recovered records. Buyers must assess transfer, import/reexport and intended-use requirements; this is not an offer of a charter-ready or commercially authorized vessel.</p>
-      </div>
-      <div class="doc-card">
-        <h3>Inspection</h3>
-        <p>Inspections in Cartagena are by appointment. Technical access and any testing must be agreed in advance and assessed for safety. A sea trial cannot currently be offered.</p>
-      </div>
-    </div>
-    <div class="doc-grid" data-lang="es" hidden>
-      <div class="doc-card">
-        <h3>Documentación</h3>
-        <p>El registro y los documentos de respaldo están disponibles para due diligence privado. El Auto DIAN 7349 otorga permanencia por importación temporal turística hasta el <strong>11 de diciembre de 2026</strong>, con obligación de reexportación antes del plazo aplicable. Un permiso DIMAR renovado independiente no ha sido verificado en los registros recuperados. Los compradores deben evaluar los requisitos de transferencia, importación/reexportación y uso previsto; esta no es una oferta de una embarcación lista para charter ni autorizada comercialmente.</p>
-      </div>
-      <div class="doc-card">
-        <h3>Inspección</h3>
-        <p>Las inspecciones en Cartagena son con cita previa. El acceso técnico y cualquier prueba deben acordarse con anticipación y evaluarse en términos de seguridad. Actualmente no se puede ofrecer una prueba de mar.</p>
-      </div>
-    </div>
+    <div class="kicker" data-lang="en">Pending work</div>
+    <div class="kicker" data-lang="es" hidden>Trabajo pendiente</div>
+    <h2 class="title" data-lang="en">What the price reflects</h2>
+    <h2 class="title" data-lang="es" hidden>Qué refleja el precio</h2>
+    <p data-lang="en">Both main engines are currently out of service, with injectors removed pending reinstallation, and propellers removed for replacement. No sea trial has been performed. This is the work the asking price reflects.</p>
+    <p data-lang="es" hidden>Ambos motores principales están actualmente fuera de servicio, con los inyectores retirados pendientes de reinstalación, y las hélices retiradas para su reemplazo. No se ha realizado prueba de mar. Este es el trabajo que refleja el precio solicitado.</p>
   </div>
 </section>
 
@@ -530,40 +397,20 @@
   <div class="wrap">
     <div class="kicker" data-lang="en">Get in touch</div>
     <div class="kicker" data-lang="es" hidden>Contáctenos</div>
-    <h2 class="title" data-lang="en">Does this project fit your capabilities and budget?</h2>
-    <h2 class="title" data-lang="es" hidden>¿Este proyecto se ajusta a su capacidad técnica y presupuesto?</h2>
-    <p class="lede" style="color:#c3cdd3; margin-top:10px;" data-lang="en">Review the condition details, arrange an inspection and submit a serious proposal.</p>
-    <p class="lede" style="color:#c3cdd3; margin-top:10px;" data-lang="es" hidden>Revise los detalles del estado, coordine una inspección y presente una propuesta seria.</p>
+    <h2 class="title" data-lang="en">Available to view in Cartagena.</h2>
+    <h2 class="title" data-lang="es" hidden>Disponible para conocer en Cartagena.</h2>
     <div class="price-line">USD 145,000</div>
-    <div class="offers-line" data-lang="en">Serious offers considered.</div>
-    <div class="offers-line" data-lang="es" hidden>Se consideran ofertas serias.</div>
     <div class="cta-row" data-lang="en">
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hello%2C%20I%20am%20interested%20in%20MISS%20TACHIRA%2C%20the%202008%20Azimut%2043%20offered%20AS%20IS%20at%20USD%20145%2C000.%20I%20understand%20that%20the%20engines%20are%20non-operational.%20Please%20share%20the%20condition%20details%20and%20inspection%20availability." target="_blank" rel="noopener">
+      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
         Discuss on WhatsApp
       </a>
-      <a class="cta cta-secondary" href="https://wa.me/573222481135?text=Hello%2C%20I%27m%20interested%20in%20MISS%20TACHIRA%20%282008%20Azimut%2043%2C%20Cartagena%2C%20USD%20145%2C000%2C%20AS%20IS%29.%20Could%20you%20send%20me%20the%20full%20condition%20report%20and%20additional%20photos%3F" target="_blank" rel="noopener">Request information</a>
-      <a class="cta cta-secondary" href="https://wa.me/573222481135?text=Hello%2C%20I%27m%20interested%20in%20MISS%20TACHIRA%20%282008%20Azimut%2043%2C%20Cartagena%2C%20USD%20145%2C000%2C%20AS%20IS%29.%20I%27d%20like%20to%20arrange%20an%20inspection%20in%20Cartagena%20%E2%80%94%20what%20availability%20do%20you%20have%3F" target="_blank" rel="noopener">Arrange an inspection</a>
     </div>
     <div class="cta-row" data-lang="es" hidden>
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hola%2C%20estoy%20interesado%20en%20MISS%20TACHIRA%2C%20el%20Azimut%2043%20de%202008%20ofrecido%20AS%20IS%20en%20USD%20145%2C000.%20Entiendo%20que%20los%20motores%20no%20est%C3%A1n%20operativos.%20Por%20favor%20comp%C3%A1rtanme%20los%20detalles%20del%20estado%20y%20la%20disponibilidad%20para%20inspecci%C3%B3n." target="_blank" rel="noopener">
+      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
         Hablar por WhatsApp
       </a>
-      <a class="cta cta-secondary" href="https://wa.me/573222481135?text=Hola%2C%20estoy%20interesado%20en%20MISS%20TACHIRA%20%28Azimut%2043%20de%202008%2C%20Cartagena%2C%20USD%20145%2C000%2C%20AS%20IS%29.%20%C2%BFPodr%C3%ADan%20enviarme%20el%20informe%20de%20estado%20completo%20y%20fotos%20adicionales%3F" target="_blank" rel="noopener">Solicitar información</a>
-      <a class="cta cta-secondary" href="https://wa.me/573222481135?text=Hola%2C%20estoy%20interesado%20en%20MISS%20TACHIRA%20%28Azimut%2043%20de%202008%2C%20Cartagena%2C%20USD%20145%2C000%2C%20AS%20IS%29.%20Me%20gustar%C3%ADa%20coordinar%20una%20inspecci%C3%B3n%20en%20Cartagena%20%E2%80%94%20%C2%BFqu%C3%A9%20disponibilidad%20tienen%3F" target="_blank" rel="noopener">Coordinar una inspección</a>
-    </div>
-    <div class="email-note on-dark" data-lang="en">Email: [MISS TACHIRA sales email — pending setup]</div>
-    <div class="email-note on-dark" data-lang="es" hidden>Correo: [correo de ventas de MISS TACHIRA — pendiente de configurar]</div>
-    <div class="msg-box" data-lang="en">
-      <div class="lbl">Suggested opening message</div>
-      <p id="prefill-msg-en">Hello, I am interested in MISS TACHIRA, the 2008 Azimut 43 offered AS IS at USD 145,000. I understand that the engines are non-operational. Please share the condition details and inspection availability.</p>
-      <button class="copy-btn" id="copyBtn-en" type="button" data-label="Copy message" data-copied="Copied">Copy message</button>
-    </div>
-    <div class="msg-box" data-lang="es" hidden>
-      <div class="lbl">Mensaje inicial sugerido</div>
-      <p id="prefill-msg-es">Hola, estoy interesado en MISS TACHIRA, el Azimut 43 de 2008 ofrecido AS IS en USD 145,000. Entiendo que los motores no están operativos. Por favor compártanme los detalles del estado y la disponibilidad para inspección.</p>
-      <button class="copy-btn" id="copyBtn-es" type="button" data-label="Copiar mensaje" data-copied="Copiado">Copiar mensaje</button>
     </div>
   </div>
 </section>
@@ -593,36 +440,6 @@
     btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
   });
   setLang('en');
-
-  function wireCopy(btnId, msgId){
-    var btn = document.getElementById(btnId);
-    var msgEl = document.getElementById(msgId);
-    if(!btn || !msgEl) return;
-    btn.addEventListener('click', function(){
-      var text = msgEl.textContent;
-      var defaultLabel = btn.getAttribute('data-label') || 'Copy message';
-      var copiedLabel = btn.getAttribute('data-copied') || 'Copied';
-      function fallbackSelect(){
-        try{
-          var range = document.createRange();
-          range.selectNodeContents(msgEl);
-          var sel = window.getSelection();
-          sel.removeAllRanges();
-          sel.addRange(range);
-        }catch(e){}
-      }
-      if(navigator.clipboard && navigator.clipboard.writeText){
-        navigator.clipboard.writeText(text).then(function(){
-          btn.textContent = copiedLabel;
-          setTimeout(function(){ btn.textContent = defaultLabel; }, 1800);
-        }).catch(fallbackSelect);
-      } else {
-        fallbackSelect();
-      }
-    });
-  }
-  wireCopy('copyBtn-en', 'prefill-msg-en');
-  wireCopy('copyBtn-es', 'prefill-msg-es');
 })();
 </script>
 </body>

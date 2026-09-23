@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="description" content="MISS TACHIRA — Azimut 43 Flybridge 2008 in Cartagena, Colombia. USD 145,000.">
-<meta property="og:title" content="MISS TACHIRA · Azimut 43 Flybridge · USD 145,000">
-<meta property="og:description" content="Azimut 43 Flybridge 2008 in Cartagena, Colombia. USD 145,000.">
+<meta name="description" content="MISS TACHIRA — Azimut 43 Flybridge 2008, Cartagena, Colombia. USD 145,000.">
+<meta property="og:title" content="MISS TACHIRA · Azimut 43 Flybridge 2008 · USD 145,000">
+<meta property="og:description" content="Azimut 43 Flybridge 2008 in Cartagena, Colombia. 2 cabins, 2 bathrooms. USD 145,000.">
 <meta property="og:image" content="img/01_exterior_principal_estribor.jpg">
 <meta name="theme-color" content="#101d28">
 <title>MISS TACHIRA · Azimut 43 Flybridge</title>
@@ -69,21 +69,27 @@
   @media (max-width:640px){.hero{min-height:88svh}.hero img{object-position:36% 50%}}
   .hero .wrap{position:relative;z-index:2;width:100%;padding-block:64px 56px}
   .eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
-  .hero h1{font-size:clamp(46px,9vw,104px);line-height:.96;letter-spacing:-.01em;margin-top:14px;color:#fbf7ee}
+  .hero h1{font-size:clamp(44px,8.5vw,96px);line-height:.96;letter-spacing:-.01em;margin:0;color:#fbf7ee}
+  .hero .model{font-size:clamp(14px,1.6vw,17px);font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:#f1e7d3;margin-top:16px}
+  .hero .place{font-size:clamp(13px,1.4vw,15px);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:6px}
   .hero .pitch{font-family:"Fraunces",serif;font-size:clamp(18px,2.4vw,24px);color:#e3ddd0;max-width:34ch;margin-top:14px}
-  .hero .price{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(44px,8vw,88px);line-height:1;margin-top:26px;color:#fff;letter-spacing:-.01em}
+  .hero .price{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(52px,9vw,96px);line-height:1;margin-top:22px;color:#fff;letter-spacing:-.01em}
   .hero .price span{font-family:"Public Sans",sans-serif;font-size:.28em;font-weight:600;letter-spacing:.18em;vertical-align:.9em;margin-right:.5em;color:var(--gold)}
   .hero .cta{margin-top:30px}
 
-  /* yacht */
-  .yacht-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-  .yacht-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
-  @media (max-width:860px){.yacht-grid{grid-template-columns:1fr;gap:32px}}
+  /* yacht + features */
+  .about p{font-size:clamp(17px,1.8vw,19px);color:var(--ink);max-width:62ch;margin:0}
+  h2.sec{font-family:"Public Sans",sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-deep);margin:0 0 18px}
+  h2.sec.feat-h{margin-top:52px}
+  .mid-cta{text-align:center;margin-top:56px}
 
   /* features */
   .features{background:var(--paper-2)}
-  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:34px}
-  .tile{background:var(--card);padding:26px 20px}
+  .glance{padding-block:44px}
+  .tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:0}
+  @media (max-width:900px){.tiles{grid-template-columns:repeat(3,1fr)}}
+  @media (max-width:420px){.tiles{grid-template-columns:repeat(2,1fr)}}
+  .tile{background:var(--card);padding:24px 18px}
   .tile-v{font-family:"Fraunces",serif;font-size:clamp(30px,3.6vw,40px);line-height:1;color:var(--ink)}
   .tile-k{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
   .amen{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px 28px}
@@ -119,7 +125,7 @@
   .spec-card th,.spec-card td{text-align:left;padding:15px 20px;font-size:15px;vertical-align:top}
   .spec-card th{width:36%;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
   @media (max-width:480px){.spec-card th,.spec-card td{padding:13px 14px}.spec-card th{width:40%}}
-  .note{max-width:760px;margin:24px 0 0;font-size:14px;color:var(--ink-soft);line-height:1.6}
+  .note{max-width:760px;margin:28px 0 0;font-size:13.5px;color:var(--ink-soft);line-height:1.6}
 
   /* closing */
   .closing{background:var(--navy-deep);color:#efe9dc;text-align:center}
@@ -142,6 +148,7 @@
   .lb .next{right:14px;top:50%;transform:translateY(-50%)}
   @media (max-width:640px){.lb .prev,.lb .next{top:auto;bottom:18px;transform:none}}
 </style>
+
 </head>
 <body>
 
@@ -161,100 +168,93 @@
 </header>
 
 <section class="hero">
-  <img src="img/01_exterior_principal_estribor.jpg" alt="MISS TACHIRA, Azimut 43 Flybridge, in Cartagena" fetchpriority="high">
+  <img src="img/01_exterior_principal_estribor.jpg" alt="MISS TACHIRA, Azimut 43 Flybridge, Cartagena" fetchpriority="high">
   <div class="wrap">
-    <div class="eyebrow">Azimut 43 Flybridge · 2008 · Cartagena</div>
     <h1>MISS TACHIRA</h1>
-    <p class="pitch" data-lang="en">A rare chance to own an Azimut 43 Flybridge at this price.</p>
-    <p class="pitch" data-lang="es" hidden>Una oportunidad poco común de tener un Azimut 43 Flybridge a este precio.</p>
+    <div class="model">Azimut 43 Flybridge · 2008</div>
+    <div class="place">Cartagena, Colombia</div>
     <div class="price"><span>USD</span>145,000</div>
     <a class="cta" data-lang="en" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Chat on WhatsApp</span></a><a class="cta" data-lang="es" hidden href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Hablar por WhatsApp</span></a>
   </div>
 </section>
 
-<section id="yacht">
-  <div class="wrap yacht-grid">
-    <div>
-      <div class="kicker"><span data-lang="en">The yacht</span><span data-lang="es" hidden>El yacht</span></div>
-      <h2 class="title" data-lang="en">Italian design, space on every deck.</h2>
-      <h2 class="title" data-lang="es" hidden>Diseño italiano y espacio en cada cubierta.</h2>
-      <p class="lede" data-lang="en">A 2008 Azimut 43 Flybridge with all the presence of Italian design. A generous flybridge, a salon framed by wide windows, a master cabin, bathrooms with shower and warm wood joinery throughout. The galley, furniture and interior upholstery were renovated and have seen little use since.</p><p class="lede" data-lang="es" hidden>Un Azimut 43 Flybridge de 2008 con toda la presencia del diseño italiano. Flybridge amplio, salón rodeado de ventanales, camarote principal, baños con ducha y carpintería en madera en todo el interior. La cocina, el mobiliario y la tapicería interior fueron renovados y han tenido poco uso desde entonces.</p>
+<section class="features glance" id="glance">
+  <div class="wrap">
+    <h2 class="sec"><span data-lang="en">At a glance</span><span data-lang="es" hidden>De un vistazo</span></h2>
+    <div class="tiles">
+<div class="tile"><div class="tile-v">2008</div><div class="tile-k"><span data-lang="en">Year</span><span data-lang="es" hidden>Año</span></div></div>
+<div class="tile"><div class="tile-v">2</div><div class="tile-k"><span data-lang="en">Cabins</span><span data-lang="es" hidden>Camarotes</span></div></div>
+<div class="tile"><div class="tile-v">2</div><div class="tile-k"><span data-lang="en">Bathrooms</span><span data-lang="es" hidden>Baños</span></div></div>
+<div class="tile"><div class="tile-v">12.92 m</div><div class="tile-k"><span data-lang="en">Registered hull length</span><span data-lang="es" hidden>Eslora de casco registrada</span></div></div>
+<div class="tile"><div class="tile-v">4.20 m</div><div class="tile-k"><span data-lang="en">Beam</span><span data-lang="es" hidden>Manga</span></div></div>
+<div class="tile"><div class="tile-v">12</div><div class="tile-k"><span data-lang="en">Registered capacity</span><span data-lang="es" hidden>Capacidad registrada</span></div></div>
     </div>
-    <img src="img/04_salon_hacia_popa.jpg" alt="Salon aboard MISS TACHIRA" loading="lazy">
   </div>
 </section>
 
-<section class="features" id="features">
+<section class="about" id="yacht">
   <div class="wrap">
-    <div class="kicker"><span data-lang="en">Features</span><span data-lang="es" hidden>Características</span></div>
-    <h2 class="title" data-lang="en">At a glance</h2>
-    <h2 class="title" data-lang="es" hidden>De un vistazo</h2>
-    <div class="tiles">
-<div class="tile"><div class="tile-v">2008</div><div class="tile-k"><span data-lang="en">Year</span><span data-lang="es" hidden>Año</span></div></div>
-<div class="tile"><div class="tile-v">12.92 m</div><div class="tile-k"><span data-lang="en">Hull length</span><span data-lang="es" hidden>Eslora de casco</span></div></div>
-<div class="tile"><div class="tile-v">4.20 m</div><div class="tile-k"><span data-lang="en">Beam</span><span data-lang="es" hidden>Manga</span></div></div>
-<div class="tile"><div class="tile-v">840 HP</div><div class="tile-k"><span data-lang="en">2 × Cummins diesel</span><span data-lang="es" hidden>2 × Cummins diésel</span></div></div>
-<div class="tile"><div class="tile-v">12</div><div class="tile-k"><span data-lang="en">Registered capacity</span><span data-lang="es" hidden>Capacidad registrada</span></div></div>
-    </div>
+    <h2 class="sec"><span data-lang="en">The yacht</span><span data-lang="es" hidden>El yate</span></h2>
+    <p data-lang="en">MISS TACHIRA is a 2008 Azimut 43 Flybridge with two cabins, two bathrooms, a salon, a renovated galley and a flybridge, with social areas inside and out. The hull is in very good condition and the interiors are very well preserved, with several recent updates.</p><p data-lang="es" hidden>MISS TACHIRA es un Azimut 43 Flybridge de 2008 con dos camarotes, dos baños, salón, cocina renovada y flybridge, con zonas sociales interiores y exteriores. El casco está en muy buen estado y los interiores están muy bien conservados, con varias actualizaciones recientes.</p>
+    <h2 class="sec feat-h"><span data-lang="en">Features</span><span data-lang="es" hidden>Características</span></h2>
     <ul class="amen">
 <li><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></li>
 <li><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></li>
+<li><span data-lang="en">2 cabins</span><span data-lang="es" hidden>2 camarotes</span></li>
+<li><span data-lang="en">2 bathrooms</span><span data-lang="es" hidden>2 baños</span></li>
 <li><span data-lang="en">Renovated galley</span><span data-lang="es" hidden>Cocina renovada</span></li>
-<li><span data-lang="en">Master cabin</span><span data-lang="es" hidden>Camarote principal</span></li>
-<li><span data-lang="en">Bathrooms with shower</span><span data-lang="es" hidden>Baños con ducha</span></li>
-<li><span data-lang="en">Cockpit</span><span data-lang="es" hidden>Cockpit</span></li>
+<li><span data-lang="en">Aft cockpit</span><span data-lang="es" hidden>Bañera de popa</span></li>
 <li><span data-lang="en">Swim platform</span><span data-lang="es" hidden>Plataforma de baño</span></li>
-<li><span data-lang="en">Lower helm station</span><span data-lang="es" hidden>Puesto de mando interior</span></li>
-<li><span data-lang="en">Flybridge helm station</span><span data-lang="es" hidden>Puesto de mando en flybridge</span></li>
+<li><span data-lang="en">Lower helm</span><span data-lang="es" hidden>Puesto de mando interior</span></li>
+<li><span data-lang="en">Flybridge helm</span><span data-lang="es" hidden>Puesto de mando en el flybridge</span></li>
 <li><span data-lang="en">Air conditioning</span><span data-lang="es" hidden>Aire acondicionado</span></li>
-<li><span data-lang="en">Shore power</span><span data-lang="es" hidden>Conexión a tierra</span></li>
-<li><span data-lang="en">Freezer</span><span data-lang="es" hidden>Congelador</span></li>
-<li><span data-lang="en">Renovated interior furnishings</span><span data-lang="es" hidden>Mobiliario y tapicería interior renovados</span></li>
-<li><span data-lang="en">Wood joinery throughout</span><span data-lang="es" hidden>Carpintería en madera</span></li>
-<li><span data-lang="en">Antifouling · May 2026</span><span data-lang="es" hidden>Antifouling · mayo 2026</span></li>
+<li><span data-lang="en">Shore power</span><span data-lang="es" hidden>Conexión eléctrica de muelle</span></li>
+<li><span data-lang="en">Well-preserved woodwork</span><span data-lang="es" hidden>Carpintería bien conservada</span></li>
+<li><span data-lang="en">Very well-preserved interiors</span><span data-lang="es" hidden>Interiores muy bien conservados</span></li>
+<li><span data-lang="en">Much of the upholstery recently redone</span><span data-lang="es" hidden>Gran parte de la tapicería renovada recientemente</span></li>
+<li><span data-lang="en">Antifouling applied May 2026</span><span data-lang="es" hidden>Pintura antiincrustante aplicada en mayo de 2026</span></li>
     </ul>
   </div>
 </section>
 
-<section id="gallery">
+<section id="gallery" style="padding-top:8px">
   <div class="wrap">
-    <div class="kicker"><span data-lang="en">Gallery</span><span data-lang="es" hidden>Galería</span></div>
-    <h2 class="title" data-lang="en">Aboard MISS TACHIRA</h2>
-    <h2 class="title" data-lang="es" hidden>A bordo de MISS TACHIRA</h2>
-<div class="space"><h3 class="space-h"><span data-lang="en">Exterior</span><span data-lang="es" hidden>Exterior</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="0" aria-label="Starboard profile" style="aspect-ratio:1.3333"><img src="img/01_exterior_principal_estribor.jpg" alt="Starboard profile" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Starboard profile</span><span data-lang="es" hidden>Perfil de estribor</span></figcaption></figure><figure class="shot port" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="1" aria-label="Side deck" style="aspect-ratio:0.7508"><img src="img/15_pasillo_exterior_estribor.jpg" alt="Side deck" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Side deck</span><span data-lang="es" hidden>Pasillo lateral</span></figcaption></figure></div><div class="jrow" style="max-width:1075px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="2" aria-label="Foredeck" style="aspect-ratio:1.3333"><img src="img/03_proa.jpg" alt="Foredeck" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Foredeck</span><span data-lang="es" hidden>Proa</span></figcaption></figure><figure class="shot port" style="flex:0.5619 1 0;"><button type="button" class="shot-btn" data-idx="3" aria-label="Stern and swim platform" style="aspect-ratio:0.5619"><img src="img/02_popa.jpg" alt="Stern and swim platform" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Stern and swim platform</span><span data-lang="es" hidden>Popa y plataforma de baño</span></figcaption></figure></div></div>
-<div class="space"><h3 class="space-h"><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></h3><div class="jrow" style="max-width:995px"><figure class="shot land" style="flex:1.7778 1 0;"><button type="button" class="shot-btn" data-idx="4" aria-label="Flybridge" style="aspect-ratio:1.7778"><img src="img/08_flybridge.jpg" alt="Flybridge" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></figcaption></figure></div></div>
-<div class="space"><h3 class="space-h"><span data-lang="en">Salon &amp; helm</span><span data-lang="es" hidden>Salón y puesto de mando</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="5" aria-label="Salon, looking aft" style="aspect-ratio:1.3333"><img src="img/04_salon_hacia_popa.jpg" alt="Salon, looking aft" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon, looking aft</span><span data-lang="es" hidden>Salón hacia popa</span></figcaption></figure><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="6" aria-label="Salon, looking forward" style="aspect-ratio:1.3333"><img src="img/05_salon_hacia_mando.jpg" alt="Salon, looking forward" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon, looking forward</span><span data-lang="es" hidden>Salón hacia proa</span></figcaption></figure></div><div class="jrow" style="max-width:1080px"><figure class="shot port" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="7" aria-label="Salon seating" style="aspect-ratio:0.7508"><img src="img/06_salon_babor.jpg" alt="Salon seating" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon seating</span><span data-lang="es" hidden>Sofá del salón</span></figcaption></figure><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="8" aria-label="Lower helm station" style="aspect-ratio:1.3333"><img src="img/07_mando.jpg" alt="Lower helm station" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Lower helm station</span><span data-lang="es" hidden>Puesto de mando interior</span></figcaption></figure></div></div>
-<div class="space"><h3 class="space-h"><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="9" aria-label="Galley" style="aspect-ratio:1.3333"><img src="img/09_cocina.jpg" alt="Galley" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure><figure class="shot land" style="flex:1.3318 1 0;"><button type="button" class="shot-btn" data-idx="10" aria-label="Galley" style="aspect-ratio:1.3318"><img src="img/10_cocina_vista_general.jpg" alt="Galley" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure></div></div>
-<div class="space"><h3 class="space-h"><span data-lang="en">Master cabin</span><span data-lang="es" hidden>Camarote principal</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="11" aria-label="Master cabin" style="aspect-ratio:1.3333"><img src="img/11_cabina.jpg" alt="Master cabin" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Master cabin</span><span data-lang="es" hidden>Camarote principal</span></figcaption></figure><figure class="shot land" style="flex:1.3318 1 0;"><button type="button" class="shot-btn" data-idx="12" aria-label="Master cabin wardrobe" style="aspect-ratio:1.3318"><img src="img/12_cabina_almacenamiento.jpg" alt="Master cabin wardrobe" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Master cabin wardrobe</span><span data-lang="es" hidden>Clóset del camarote principal</span></figcaption></figure></div></div>
-<div class="space"><h3 class="space-h"><span data-lang="en">Bathroom</span><span data-lang="es" hidden>Baño</span></h3><div class="jrow pp" style="max-width:854px"><figure class="shot port" style="flex:0.7500 1 0;"><button type="button" class="shot-btn" data-idx="13" aria-label="Bathroom" style="aspect-ratio:0.7500"><img src="img/13_bano.jpg" alt="Bathroom" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Bathroom</span><span data-lang="es" hidden>Baño</span></figcaption></figure><figure class="shot port" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="14" aria-label="Shower" style="aspect-ratio:0.7508"><img src="img/14_ducha.jpg" alt="Shower" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Shower</span><span data-lang="es" hidden>Ducha</span></figcaption></figure></div></div>
+    <h2 class="sec"><span data-lang="en">Gallery</span><span data-lang="es" hidden>Galería</span></h2>
+<div class="space"><h3 class="space-h"><span data-lang="en">Exterior</span><span data-lang="es" hidden>Exterior</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="0" aria-label="Starboard profile" style="aspect-ratio:1.3333"><img src="img/01_exterior_principal_estribor.jpg" alt="Starboard profile" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Starboard profile</span><span data-lang="es" hidden>Perfil de estribor</span></figcaption></figure><figure class="shot" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="1" aria-label="Foredeck" style="aspect-ratio:1.3333"><img src="img/03_proa.jpg" alt="Foredeck" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Foredeck</span><span data-lang="es" hidden>Proa</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></h3><div class="jrow" style="max-width:960px"><figure class="shot" style="flex:1.7778 1 0;"><button type="button" class="shot-btn" data-idx="2" aria-label="Flybridge" style="aspect-ratio:1.7778"><img src="img/08_flybridge.jpg" alt="Flybridge" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="3" aria-label="Salon, looking aft" style="aspect-ratio:1.3333"><img src="img/04_salon_hacia_popa.jpg" alt="Salon, looking aft" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon, looking aft</span><span data-lang="es" hidden>Salón hacia popa</span></figcaption></figure><figure class="shot" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="4" aria-label="Salon, looking forward" style="aspect-ratio:1.3333"><img src="img/05_salon_hacia_mando.jpg" alt="Salon, looking forward" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon, looking forward</span><span data-lang="es" hidden>Salón hacia proa</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="5" aria-label="Galley" style="aspect-ratio:1.3333"><img src="img/09_cocina.jpg" alt="Galley" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure><figure class="shot" style="flex:1.3318 1 0;"><button type="button" class="shot-btn" data-idx="6" aria-label="Galley" style="aspect-ratio:1.3318"><img src="img/10_cocina_vista_general.jpg" alt="Galley" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Cabins</span><span data-lang="es" hidden>Camarotes</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="7" aria-label="Cabin" style="aspect-ratio:1.3333"><img src="img/11_cabina.jpg" alt="Cabin" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Cabin</span><span data-lang="es" hidden>Camarote</span></figcaption></figure><figure class="shot" style="flex:1.3318 1 0;"><button type="button" class="shot-btn" data-idx="8" aria-label="Cabin storage" style="aspect-ratio:1.3318"><img src="img/12_cabina_almacenamiento.jpg" alt="Cabin storage" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Cabin storage</span><span data-lang="es" hidden>Clóset del camarote</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Bathrooms</span><span data-lang="es" hidden>Baños</span></h3><div class="jrow pp" style="max-width:824px"><figure class="shot" style="flex:0.7500 1 0;"><button type="button" class="shot-btn" data-idx="9" aria-label="Bathroom" style="aspect-ratio:0.7500"><img src="img/13_bano.jpg" alt="Bathroom" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Bathroom</span><span data-lang="es" hidden>Baño</span></figcaption></figure><figure class="shot" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="10" aria-label="Shower" style="aspect-ratio:0.7508"><img src="img/14_ducha.jpg" alt="Shower" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Shower</span><span data-lang="es" hidden>Ducha</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Aft deck &amp; side deck</span><span data-lang="es" hidden>Popa y pasillo lateral</span></h3><div class="jrow pp" style="max-width:722px"><figure class="shot" style="flex:0.5619 1 0;"><button type="button" class="shot-btn" data-idx="11" aria-label="Stern and swim platform" style="aspect-ratio:0.5619"><img src="img/02_popa.jpg" alt="Stern and swim platform" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Stern and swim platform</span><span data-lang="es" hidden>Popa y plataforma de baño</span></figcaption></figure><figure class="shot" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="12" aria-label="Side deck" style="aspect-ratio:0.7508"><img src="img/15_pasillo_exterior_estribor.jpg" alt="Side deck" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Side deck</span><span data-lang="es" hidden>Pasillo lateral</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Helm</span><span data-lang="es" hidden>Puesto de mando</span></h3><div class="jrow" style="max-width:960px"><figure class="shot" style="flex:1.7778 1 0;"><button type="button" class="shot-btn" data-idx="13" aria-label="Lower helm" style="aspect-ratio:1.7778"><img src="img/07_mando.jpg" alt="Lower helm" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Lower helm</span><span data-lang="es" hidden>Puesto de mando interior</span></figcaption></figure></div></div>
+    <div class="mid-cta"><a class="cta" data-lang="en" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Chat on WhatsApp</span></a><a class="cta" data-lang="es" hidden href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Hablar por WhatsApp</span></a></div>
   </div>
 </section>
 
 <section class="specs" id="specs">
   <div class="wrap">
-    <div class="kicker"><span data-lang="en">Details</span><span data-lang="es" hidden>Ficha técnica</span></div>
-    <h2 class="title" data-lang="en">Specifications</h2>
-    <h2 class="title" data-lang="es" hidden>Especificaciones</h2>
-    <div class="spec-card"><table>
+    <h2 class="sec"><span data-lang="en">Specifications</span><span data-lang="es" hidden>Ficha técnica</span></h2>
+    <div class="spec-card" style="margin-top:0"><table>
 <tr><th scope="row"><span data-lang="en">Model</span><span data-lang="es" hidden>Modelo</span></th><td><span data-lang="en">Azimut 43 Flybridge</span><span data-lang="es" hidden>Azimut 43 Flybridge</span></td></tr>
 <tr><th scope="row"><span data-lang="en">Year</span><span data-lang="es" hidden>Año</span></th><td><span data-lang="en">2008</span><span data-lang="es" hidden>2008</span></td></tr>
 <tr><th scope="row"><span data-lang="en">Location</span><span data-lang="es" hidden>Ubicación</span></th><td><span data-lang="en">Cartagena, Colombia</span><span data-lang="es" hidden>Cartagena, Colombia</span></td></tr>
 <tr><th scope="row"><span data-lang="en">Hull</span><span data-lang="es" hidden>Casco</span></th><td><span data-lang="en">Fiberglass</span><span data-lang="es" hidden>Fibra de vidrio</span></td></tr>
-<tr><th scope="row"><span data-lang="en">Hull length</span><span data-lang="es" hidden>Eslora de casco</span></th><td><span data-lang="en">12.92 m</span><span data-lang="es" hidden>12.92 m</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Registered hull length</span><span data-lang="es" hidden>Eslora de casco registrada</span></th><td><span data-lang="en">12.92 m</span><span data-lang="es" hidden>12.92 m</span></td></tr>
 <tr><th scope="row"><span data-lang="en">Beam</span><span data-lang="es" hidden>Manga</span></th><td><span data-lang="en">4.20 m</span><span data-lang="es" hidden>4.20 m</span></td></tr>
-<tr><th scope="row"><span data-lang="en">Engines</span><span data-lang="es" hidden>Motores</span></th><td><span data-lang="en">2 × Cummins QSB5.9-425 HO, diesel</span><span data-lang="es" hidden>2 × Cummins QSB5.9-425 HO, diésel</span></td></tr>
-<tr><th scope="row"><span data-lang="en">Power</span><span data-lang="es" hidden>Potencia</span></th><td><span data-lang="en">420 HP each · 840 HP total</span><span data-lang="es" hidden>420 HP cada uno · 840 HP total</span></td></tr>
 <tr><th scope="row"><span data-lang="en">Registered capacity</span><span data-lang="es" hidden>Capacidad registrada</span></th><td><span data-lang="en">12 persons</span><span data-lang="es" hidden>12 personas</span></td></tr>
-<tr><th scope="row"><span data-lang="en">Price</span><span data-lang="es" hidden>Precio</span></th><td><span data-lang="en">USD 145,000</span><span data-lang="es" hidden>USD 145,000</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Engines</span><span data-lang="es" hidden>Motores</span></th><td><span data-lang="en">2 × Cummins QSB5.9-425 HO</span><span data-lang="es" hidden>2 × Cummins QSB5.9-425 HO</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Power</span><span data-lang="es" hidden>Potencia</span></th><td><span data-lang="en">420 HP each · 840 HP total</span><span data-lang="es" hidden>420 HP cada uno · 840 HP en total</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Transmissions</span><span data-lang="es" hidden>Transmisiones</span></th><td><span data-lang="en">2 × ZF 85 IV</span><span data-lang="es" hidden>2 × ZF 85 IV</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Fuel</span><span data-lang="es" hidden>Combustible</span></th><td><span data-lang="en">Diesel</span><span data-lang="es" hidden>Diésel</span></td></tr>
     </table></div>
-    <p class="note" data-lang="en">The yacht requires work on her propulsion system and some equipment before returning to navigation. Her current condition is reflected in the price. Documentation and technical information are available on request.</p>
-    <p class="note" data-lang="es" hidden>La embarcación requiere trabajo en su sistema de propulsión y algunos equipos antes de volver a navegar. Su condición actual está reflejada en el precio. Documentación e información técnica disponibles para interesados.</p>
+    <p class="note" data-lang="en">The vessel requires work on its propulsion system and some equipment before returning to navigation. The asking price reflects its current condition. Technical information is available to interested parties.</p>
+    <p class="note" data-lang="es" hidden>La embarcación requiere trabajo en su sistema de propulsión y en algunos equipos antes de volver a navegar. El precio solicitado tiene en cuenta su condición actual. Información técnica disponible para interesados.</p>
   </div>
 </section>
 
 <section class="closing" id="contact">
   <div class="wrap">
-    <div class="kicker">MISS TACHIRA · Azimut 43 Flybridge</div>
     <h2 data-lang="en">Available to view in Cartagena.</h2>
     <h2 data-lang="es" hidden>Disponible para conocer en Cartagena.</h2>
     <div class="price">USD 145,000</div>
@@ -264,9 +264,8 @@
 
 <footer>
   <div class="wrap">
-    <span>MISS TACHIRA · Azimut 43 Flybridge 2008 · Cartagena, Colombia · WhatsApp +57 322 248 1135</span>
-    <span data-lang="en">Sold as is, where is.</span>
-    <span data-lang="es" hidden>Se vende en el estado y lugar en que se encuentra (as is).</span>
+    <span>MISS TACHIRA · Azimut 43 Flybridge 2008 · Cartagena, Colombia</span>
+    <span>WhatsApp +57 322 248 1135</span>
   </div>
 </footer>
 
@@ -280,7 +279,7 @@
 
 <script>
 (function(){
-  var LB = [{"src": "img/01_exterior_principal_estribor.jpg", "en": "Starboard profile", "es": "Perfil de estribor"}, {"src": "img/15_pasillo_exterior_estribor.jpg", "en": "Side deck", "es": "Pasillo lateral"}, {"src": "img/03_proa.jpg", "en": "Foredeck", "es": "Proa"}, {"src": "img/02_popa.jpg", "en": "Stern and swim platform", "es": "Popa y plataforma de baño"}, {"src": "img/08_flybridge.jpg", "en": "Flybridge", "es": "Flybridge"}, {"src": "img/04_salon_hacia_popa.jpg", "en": "Salon, looking aft", "es": "Salón hacia popa"}, {"src": "img/05_salon_hacia_mando.jpg", "en": "Salon, looking forward", "es": "Salón hacia proa"}, {"src": "img/06_salon_babor.jpg", "en": "Salon seating", "es": "Sofá del salón"}, {"src": "img/07_mando.jpg", "en": "Lower helm station", "es": "Puesto de mando interior"}, {"src": "img/09_cocina.jpg", "en": "Galley", "es": "Cocina"}, {"src": "img/10_cocina_vista_general.jpg", "en": "Galley", "es": "Cocina"}, {"src": "img/11_cabina.jpg", "en": "Master cabin", "es": "Camarote principal"}, {"src": "img/12_cabina_almacenamiento.jpg", "en": "Master cabin wardrobe", "es": "Clóset del camarote principal"}, {"src": "img/13_bano.jpg", "en": "Bathroom", "es": "Baño"}, {"src": "img/14_ducha.jpg", "en": "Shower", "es": "Ducha"}];
+  var LB = [{"src": "img/01_exterior_principal_estribor.jpg", "en": "Starboard profile", "es": "Perfil de estribor"}, {"src": "img/03_proa.jpg", "en": "Foredeck", "es": "Proa"}, {"src": "img/08_flybridge.jpg", "en": "Flybridge", "es": "Flybridge"}, {"src": "img/04_salon_hacia_popa.jpg", "en": "Salon, looking aft", "es": "Salón hacia popa"}, {"src": "img/05_salon_hacia_mando.jpg", "en": "Salon, looking forward", "es": "Salón hacia proa"}, {"src": "img/09_cocina.jpg", "en": "Galley", "es": "Cocina"}, {"src": "img/10_cocina_vista_general.jpg", "en": "Galley", "es": "Cocina"}, {"src": "img/11_cabina.jpg", "en": "Cabin", "es": "Camarote"}, {"src": "img/12_cabina_almacenamiento.jpg", "en": "Cabin storage", "es": "Clóset del camarote"}, {"src": "img/13_bano.jpg", "en": "Bathroom", "es": "Baño"}, {"src": "img/14_ducha.jpg", "en": "Shower", "es": "Ducha"}, {"src": "img/02_popa.jpg", "en": "Stern and swim platform", "es": "Popa y plataforma de baño"}, {"src": "img/15_pasillo_exterior_estribor.jpg", "en": "Side deck", "es": "Pasillo lateral"}, {"src": "img/07_mando.jpg", "en": "Lower helm", "es": "Puesto de mando interior"}];
   var cur = 'en';
   function setLang(lang){
     cur = lang;
@@ -319,5 +318,6 @@
   });
 })();
 </script>
+
 </body>
 </html>

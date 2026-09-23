@@ -2,444 +2,321 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow, noarchive">
-<meta name="description" content="MISS TACHIRA - 2008 Azimut 43 Flybridge, Cartagena, Colombia. USD 145,000.">
-<title>Miss Tachira</title>
+<meta name="description" content="MISS TACHIRA — Azimut 43 Flybridge 2008 in Cartagena, Colombia. USD 145,000.">
+<meta property="og:title" content="MISS TACHIRA · Azimut 43 Flybridge · USD 145,000">
+<meta property="og:description" content="Azimut 43 Flybridge 2008 in Cartagena, Colombia. USD 145,000.">
+<meta property="og:image" content="img/01_exterior_principal_estribor.jpg">
+<meta name="theme-color" content="#101d28">
+<title>MISS TACHIRA · Azimut 43 Flybridge</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#10181d;
-    --ink-soft:#455058;
-    --paper:#ece6d6;
-    --paper-2:#e1d8bf;
-    --navy:#1d3446;
-    --navy-deep:#152735;
-    --brass:#a1793d;
-    --brass-strong:#6b4a1f;
-    --gold:#eec98a;
-    --rust:#8a4a3a;
-    --line: rgba(16,24,29,0.16);
-    --card: #f5f1e6;
-    color-scheme: light;
-    background: var(--paper);
+    --ink:#13202a; --ink-soft:#4d5961; --paper:#f4efe4; --paper-2:#ebe3d2; --card:#fbf8f1;
+    --navy:#16293a; --navy-deep:#101d28; --brass:#b38a4a; --brass-deep:#8c6a33; --gold:#e9c98f;
+    --line:rgba(19,32,42,.12);
+    color-scheme:light;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --ink:#ece6d6;
-      --ink-soft:#c7bfa8;
-      --paper:#0c1114;
-      --paper-2:#141b20;
-      --navy:#22384a;
-      --navy-deep:#0e1a24;
-      --brass:#c99a51;
-      --brass-strong:#e0b06a;
-      --rust:#c68064;
-      --line: rgba(236,230,214,0.16);
-      --card:#131a1e;
-      color-scheme: dark;
+      --ink:#efe9dc; --ink-soft:#b9b3a4; --paper:#0d141a; --paper-2:#131c24; --card:#16212a;
+      --brass:#c99a55; --brass-deep:#e0b36b; --line:rgba(239,233,220,.12); color-scheme:dark;
     }
   }
   :root[data-theme="dark"]{
-    --ink:#ece6d6;
-    --ink-soft:#c7bfa8;
-    --paper:#0c1114;
-    --paper-2:#141b20;
-    --navy:#22384a;
-    --navy-deep:#0e1a24;
-    --brass:#c99a51;
-    --brass-strong:#e0b06a;
-    --rust:#c68064;
-    --line: rgba(236,230,214,0.16);
-    --card:#131a1e;
-    color-scheme: dark;
+    --ink:#efe9dc; --ink-soft:#b9b3a4; --paper:#0d141a; --paper-2:#131c24; --card:#16212a;
+    --brass:#c99a55; --brass-deep:#e0b36b; --line:rgba(239,233,220,.12); color-scheme:dark;
   }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:"Public Sans",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;margin:0;text-wrap:balance}
+  img{display:block;max-width:100%}
+  [hidden]{display:none!important}
+  .wrap{max-width:1120px;margin:0 auto;padding-inline:20px}
+  section{padding-block:80px}
+  @media (max-width:640px){section{padding-block:56px}}
+  .kicker{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:14px}
+  h2.title{font-size:clamp(28px,4.4vw,44px);line-height:1.12;max-width:20ch}
+  .lede{font-size:clamp(17px,1.9vw,20px);color:var(--ink-soft);max-width:60ch;margin:22px 0 0}
 
-  *{box-sizing:border-box;}
-  body{
-    background:var(--paper);
-    color:var(--ink);
-    font-family:"Public Sans", system-ui, sans-serif;
-    line-height:1.55;
-  }
-  h1,h2,h3{
-    font-family:"Fraunces", Georgia, serif;
-    font-weight:600;
-    text-wrap:balance;
-    margin:0;
-    color:var(--ink);
-  }
-  .mono{ font-family:"IBM Plex Mono", ui-monospace, monospace; }
-  a{ color:inherit; }
-  img{ display:block; max-width:100%; }
-  [hidden]{ display:none !important; }
+  /* CTA */
+  .cta{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#07240f;font-weight:700;font-size:16px;
+       padding:16px 26px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.18);transition:transform .15s ease,background .15s ease}
+  .cta:hover{background:#2be071;transform:translateY(-1px)}
+  .cta:focus-visible,.lang-switch:focus-visible,.wa-mini:focus-visible,.shot-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
-  .wrap{ max-width:1080px; margin:0 auto; padding-inline:20px; }
-  section{ padding-block: 56px; }
-  @media (max-width:640px){ section{ padding-block:40px; } }
-
-  /* thin persistent bar */
-  .topbar{
-    position:sticky; top:env(safe-area-inset-top,0px); z-index:20;
-    background:var(--navy-deep); color:#ece6d6;
-    border-bottom:1px solid rgba(236,230,214,0.12);
-  }
-  .topbar .wrap{
-    display:flex; align-items:center; justify-content:space-between;
-    padding-block:10px; gap:12px; max-width:1080px; flex-wrap:wrap;
-  }
-  .topbar .name{ font-family:"Fraunces",serif; font-weight:600; font-size:15px; letter-spacing:.02em; }
-  .topbar .right{ display:flex; align-items:center; gap:14px; }
-  .topbar .price{ font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:14px; color:var(--gold); white-space:nowrap; }
-  .lang-switch-group{ display:flex; gap:4px; }
-  .lang-switch{
-    font-family:"IBM Plex Mono",monospace; font-size:11px; font-weight:600; letter-spacing:.04em;
-    padding:4px 9px; border-radius:2px; border:1px solid rgba(236,230,214,.32);
-    background:transparent; color:rgba(236,230,214,.7); cursor:pointer;
-  }
-  .lang-switch.active{ background:var(--gold); color:#1a1108; border-color:var(--gold); }
-  .lang-switch:hover:not(.active){ border-color:rgba(236,230,214,.65); color:#ece6d6; }
-  .lang-switch:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  /* topbar */
+  .topbar{position:sticky;top:0;z-index:30;background:rgba(16,29,40,.94);backdrop-filter:blur(8px);color:#efe9dc;border-bottom:1px solid rgba(239,233,220,.1)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:10px}
+  .brand{font-family:"Fraunces",serif;font-size:16px;letter-spacing:.04em;white-space:nowrap}
+  .brand small{font-family:"Public Sans",sans-serif;font-size:11px;letter-spacing:.14em;opacity:.6;margin-left:8px;text-transform:uppercase}
+  @media (max-width:560px){.brand small{display:none}}
+  .tb-right{display:flex;align-items:center;gap:10px}
+  .tb-price{font-weight:600;font-size:14px;color:var(--gold);white-space:nowrap}
+  .lang{display:flex;gap:2px;background:rgba(239,233,220,.08);border-radius:999px;padding:3px}
+  .lang-switch{font:600 11px/1 "Public Sans",sans-serif;letter-spacing:.08em;padding:6px 9px;border-radius:999px;border:0;background:transparent;color:rgba(239,233,220,.7);cursor:pointer}
+  .lang-switch.active{background:var(--gold);color:#1a1206}
+  .wa-mini{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#25d366;color:#07240f}
 
   /* hero */
-  .hero{
-    position:relative; padding-block:0;
-    min-height: 640px;
-    display:flex; align-items:flex-end;
-    background:var(--navy-deep);
-  }
-  .hero-img{
-    position:absolute; inset:0; width:100%; height:100%;
-    object-fit:cover; object-position:center 55%;
-  }
-  .hero-scrim{
-    position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(10,16,20,.12) 0%, rgba(10,16,20,.32) 45%, rgba(9,14,17,.90) 100%);
-  }
-  .hero-content{ position:relative; z-index:2; color:#f2ede0; width:100%; padding-block:56px 44px; }
-  .eyebrow{
-    font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--gold); display:flex; align-items:center; gap:8px; margin-bottom:14px;
-  }
-  .hero h1{ font-size:clamp(38px,7vw,64px); color:#f7f3e6; line-height:1.02; }
-  .hero .sub{ font-family:"Fraunces",serif; font-weight:500; font-size:clamp(16px,2.4vw,20px); color:#cfd6db; margin-top:8px; }
-  .hero-meta{ display:flex; flex-wrap:wrap; gap:10px 22px; align-items:baseline; margin-top:26px; }
-  .price-big{ font-family:"IBM Plex Mono",monospace; font-size:clamp(28px,5vw,40px); font-weight:600; color:#f7f3e6; letter-spacing:-.01em; }
-  .disclose-line{
-    margin-top:18px; font-size:13.5px; color:#c7cdd0; font-family:"IBM Plex Mono",monospace; max-width:560px; line-height:1.5;
-  }
-  .cta-row{ display:flex; flex-wrap:wrap; gap:12px; margin-top:26px; }
-  .cta{
-    font-family:"Public Sans",sans-serif; font-weight:600; font-size:15px;
-    padding:14px 24px; border-radius:2px; cursor:pointer; text-decoration:none;
-    display:inline-flex; align-items:center; gap:9px; border:1px solid transparent;
-    transition:opacity .15s ease, background-color .15s ease;
-  }
-  .cta-primary{ background:var(--brass); color:#1a1108; }
-  .cta-primary:hover{ background:var(--brass-strong); }
-  .cta svg{ flex:none; }
+  .hero{position:relative;min-height:min(92svh,900px);display:flex;align-items:flex-end;background:var(--navy-deep);color:#f6f1e6;padding:0;overflow:hidden}
+  .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 55%}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,14,20,.55) 0%,rgba(8,14,20,.15) 55%,rgba(8,14,20,0) 100%),linear-gradient(180deg,rgba(8,14,20,.1) 0%,rgba(8,14,20,.3) 45%,rgba(8,14,20,.9) 100%)}
+  @media (max-width:640px){.hero{min-height:88svh}.hero img{object-position:36% 50%}}
+  .hero .wrap{position:relative;z-index:2;width:100%;padding-block:64px 56px}
+  .eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+  .hero h1{font-size:clamp(46px,9vw,104px);line-height:.96;letter-spacing:-.01em;margin-top:14px;color:#fbf7ee}
+  .hero .pitch{font-family:"Fraunces",serif;font-size:clamp(18px,2.4vw,24px);color:#e3ddd0;max-width:34ch;margin-top:14px}
+  .hero .price{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(44px,8vw,88px);line-height:1;margin-top:26px;color:#fff;letter-spacing:-.01em}
+  .hero .price span{font-family:"Public Sans",sans-serif;font-size:.28em;font-weight:600;letter-spacing:.18em;vertical-align:.9em;margin-right:.5em;color:var(--gold)}
+  .hero .cta{margin-top:30px}
 
-  /* dashed divider */
-  .sounding{ height:1px; background-image: repeating-linear-gradient(90deg, var(--line) 0 6px, transparent 6px 14px); }
+  /* yacht */
+  .yacht-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .yacht-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+  @media (max-width:860px){.yacht-grid{grid-template-columns:1fr;gap:32px}}
 
-  /* section header */
-  .kicker{ font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--brass-strong); margin-bottom:10px; }
-  .lede{ font-size:18px; max-width:64ch; color:var(--ink-soft); }
-  h2.title{ font-size:clamp(24px,4vw,32px); max-width:22ch; }
-
-  /* opportunity */
-  .op-grid{ margin-top:22px; }
-  .op-list{ list-style:none; padding:0; margin:18px 0 0; display:flex; flex-direction:column; gap:12px; }
-  .op-list li{ display:flex; gap:12px; font-size:15.5px; color:var(--ink-soft); }
-  .op-list li::before{ content:"—"; color:var(--brass); flex:none; }
-
-  /* particulars table */
-  .particulars-card{
-    background:var(--card); border:1px solid var(--line); border-radius:3px; overflow:hidden; margin-top:22px;
-  }
-  table.spec{ width:100%; border-collapse:collapse; }
-  table.spec tr{ border-top:1px solid var(--line); }
-  table.spec tr:first-child{ border-top:none; }
-  table.spec td{ padding:13px 18px; font-size:14.5px; vertical-align:top; }
-  table.spec td:first-child{ color:var(--ink-soft); width:38%; font-family:"IBM Plex Mono",monospace; font-size:12.5px; letter-spacing:.02em; text-transform:uppercase; }
-  table.spec td:last-child{ font-family:"IBM Plex Mono",monospace; font-size:14px; }
+  /* features */
+  .features{background:var(--paper-2)}
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:34px}
+  .tile{background:var(--card);padding:26px 20px}
+  .tile-v{font-family:"Fraunces",serif;font-size:clamp(30px,3.6vw,40px);line-height:1;color:var(--ink)}
+  .tile-k{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+  .amen{list-style:none;padding:0;margin:34px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px 28px}
+  @media (max-width:860px){.amen{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.amen{gap:10px 18px}.amen li{font-size:14.5px;padding-bottom:10px;align-items:flex-start}.amen li::before{margin-top:8px}}
+  @media (max-width:340px){.amen{grid-template-columns:1fr}}
+  .amen li{display:flex;align-items:center;gap:12px;font-size:15.5px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+  .amen li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--brass)}
 
   /* gallery */
-  .gal-groups{ margin-top:26px; }
-  .gal-group{ margin-top:36px; }
-  .gal-group:first-child{ margin-top:0; }
-  .gal-group-label{
-    font-family:"IBM Plex Mono",monospace; font-weight:600; font-size:11.5px; letter-spacing:.1em;
-    text-transform:uppercase; color:var(--ink-soft); margin-bottom:12px; padding-bottom:8px;
-    border-bottom:1px solid var(--line);
+  .space{margin-top:56px}
+  .space:first-of-type{margin-top:36px}
+  .space-h{font-size:22px;margin-bottom:16px;display:flex;align-items:center;gap:14px}
+  .space-h::after{content:"";flex:1;height:1px;background:var(--line)}
+  .jrow{display:flex;gap:14px;align-items:flex-start}
+  .jrow + .jrow{margin-top:14px}
+  @media (max-width:640px){
+    .jrow{flex-wrap:wrap;max-width:none!important}
+    .jrow .shot{flex:1 1 100%!important}
+    .jrow.pp .shot{flex:1 1 calc(50% - 7px)!important}
   }
-  .gal-row{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-  .gal-row + .gal-row{ margin-top:14px; }
-  @media (max-width:760px){ .gal-row{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:460px){ .gal-row{ grid-template-columns:1fr 1fr; gap:10px; } }
-  figure.gal{ margin:0; }
-  figure.gal .frame{ aspect-ratio:4/3; overflow:hidden; border-radius:2px; background:var(--paper-2); }
-  figure.gal .frame.tall{ aspect-ratio:3/4; }
-  figure.gal img{ width:100%; height:100%; object-fit:cover; }
-  figure.gal figcaption{ font-size:12px; color:var(--ink-soft); margin-top:7px; font-family:"IBM Plex Mono",monospace; letter-spacing:.01em; }
+  .shot{margin:0}
+  .shot-btn{display:block;width:100%;padding:0;border:0;background:var(--paper-2);border-radius:6px;overflow:hidden;cursor:zoom-in}
+  .shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .shot-btn:hover img{transform:scale(1.03)}
+  .shot figcaption{font-size:13px;color:var(--ink-soft);margin-top:8px}
 
-  /* condition note */
-  .log-section{ background:var(--navy); color:#e7e2d2; }
-  .log-section .kicker{ color:var(--gold); }
-  .log-section h2.title{ color:#f5f1e4; }
-  .log-section p{ font-size:15.5px; color:#d3d8da; margin:14px 0 0; max-width:70ch; }
+  /* specs */
+  .specs{background:var(--paper-2)}
+  .spec-card{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;max-width:760px}
+  .spec-card table{width:100%;border-collapse:collapse}
+  .spec-card tr + tr{border-top:1px solid var(--line)}
+  .spec-card th,.spec-card td{text-align:left;padding:15px 20px;font-size:15px;vertical-align:top}
+  .spec-card th{width:36%;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  @media (max-width:480px){.spec-card th,.spec-card td{padding:13px 14px}.spec-card th{width:40%}}
+  .note{max-width:760px;margin:24px 0 0;font-size:14px;color:var(--ink-soft);line-height:1.6}
 
-  /* closing cta */
-  .closing{ background:var(--navy-deep); color:#f0ede0; }
-  .closing .wrap{ text-align:left; }
-  .closing h2.title{ color:#f7f3e6; }
-  .closing .price-line{ font-family:"IBM Plex Mono",monospace; font-size:clamp(26px,4.5vw,36px); margin-top:10px; color:#f7f3e6; }
-  .cta:focus-visible, a:focus-visible{ outline:2px solid var(--brass); outline-offset:2px; }
+  /* closing */
+  .closing{background:var(--navy-deep);color:#efe9dc;text-align:center}
+  .closing .kicker{color:var(--gold)}
+  .closing h2{font-size:clamp(30px,5vw,52px);color:#fbf7ee;margin:0 auto;max-width:18ch}
+  .closing .price{font-family:"Fraunces",serif;font-weight:600;font-size:clamp(38px,6vw,64px);margin-top:18px;color:#fff}
+  .closing .cta{margin-top:26px}
 
-  footer{ padding-block:32px calc(32px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--line); }
-  footer .wrap{ display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; font-size:12.5px; color:var(--ink-soft); }
+  footer{background:var(--navy-deep);color:rgba(239,233,220,.6);border-top:1px solid rgba(239,233,220,.08);font-size:12.5px}
+  footer .wrap{padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
 
-  @media (prefers-reduced-motion:no-preference){
-    .fade-in{ animation: fadeIn .5s ease both; }
-    @keyframes fadeIn{ from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;} }
-  }
+  /* lightbox */
+  .lb{position:fixed;inset:0;z-index:60;background:rgba(6,10,14,.95);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:56px 12px 24px}
+  .lb img{max-width:min(1400px,100%);max-height:calc(100svh - 130px);object-fit:contain;border-radius:4px}
+  .lb-cap{color:#d9d3c6;font-size:14px;margin-top:12px;text-align:center}
+  .lb button{position:absolute;background:rgba(255,255,255,.1);color:#fff;border:0;width:46px;height:46px;border-radius:50%;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .lb button:hover{background:rgba(255,255,255,.2)}
+  .lb .x{top:14px;right:14px}
+  .lb .prev{left:14px;top:50%;transform:translateY(-50%)}
+  .lb .next{right:14px;top:50%;transform:translateY(-50%)}
+  @media (max-width:640px){.lb .prev,.lb .next{top:auto;bottom:18px;transform:none}}
 </style>
-
 </head>
 <body>
-<div class="topbar">
+
+<header class="topbar">
   <div class="wrap">
-    <div class="name">MISS TACHIRA <span style="opacity:.55; font-family:'IBM Plex Mono',monospace; font-size:11px; margin-left:6px;">AZIMUT 43 FLYBRIDGE · 2008</span></div>
-    <div class="right">
-      <div class="price">USD 145,000</div>
-      <div class="lang-switch-group" role="group" aria-label="Language / Idioma">
+    <div class="brand">MISS TACHIRA<small>Azimut 43 Flybridge</small></div>
+    <div class="tb-right">
+      <div class="tb-price">USD 145,000</div>
+      <div class="lang" role="group" aria-label="Language / Idioma">
         <button type="button" class="lang-switch" data-set-lang="en">EN</button>
         <button type="button" class="lang-switch" data-set-lang="es">ES</button>
       </div>
+      <a class="wa-mini" data-lang="en" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg></a>
+      <a class="wa-mini" data-lang="es" hidden href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg></a>
     </div>
   </div>
-</div>
+</header>
 
 <section class="hero">
-  <img class="hero-img" src="img/01_exterior_principal_estribor.jpg" alt="MISS TACHIRA, starboard side profile, Cartagena, Colombia">
-  <div class="hero-scrim"></div>
-  <div class="wrap hero-content">
-    <div class="eyebrow">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M12 21c-4 0-7-2.5-7-6h14c0 3.5-3 6-7 6ZM9 7h6M8 5.2c0 1.5 1.8 2.8 4 2.8s4-1.3 4-2.8"/></svg>
-      2008 Azimut 43 Flybridge · Cartagena, Colombia
-    </div>
+  <img src="img/01_exterior_principal_estribor.jpg" alt="MISS TACHIRA, Azimut 43 Flybridge, in Cartagena" fetchpriority="high">
+  <div class="wrap">
+    <div class="eyebrow">Azimut 43 Flybridge · 2008 · Cartagena</div>
     <h1>MISS TACHIRA</h1>
-    <div class="sub" data-lang="en">Azimut flybridge styling and refreshed interiors, in Cartagena.</div>
-    <div class="sub" data-lang="es" hidden>Estilo flybridge Azimut e interiores renovados, en Cartagena.</div>
-    <div class="hero-meta">
-      <div class="price-big">USD 145,000</div>
-    </div>
-    <div class="disclose-line" data-lang="en">Requires work on the propulsion system and some equipment before returning to navigation — reflected in the price.</div>
-    <div class="disclose-line" data-lang="es" hidden>Requiere trabajo en el sistema de propulsión y algunos equipos antes de volver a navegar — reflejado en el precio.</div>
-    <div class="cta-row" data-lang="en">
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
-        Discuss on WhatsApp
-      </a>
-    </div>
-    <div class="cta-row" data-lang="es" hidden>
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
-        Hablar por WhatsApp
-      </a>
-    </div>
+    <p class="pitch" data-lang="en">A rare chance to own an Azimut 43 Flybridge at this price.</p>
+    <p class="pitch" data-lang="es" hidden>Una oportunidad poco común de tener un Azimut 43 Flybridge a este precio.</p>
+    <div class="price"><span>USD</span>145,000</div>
+    <a class="cta" data-lang="en" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Chat on WhatsApp</span></a><a class="cta" data-lang="es" hidden href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Hablar por WhatsApp</span></a>
   </div>
 </section>
 
-<div class="sounding"></div>
-
-<section id="opportunity">
-  <div class="wrap">
-    <div class="kicker" data-lang="en">The opportunity</div>
-    <div class="kicker" data-lang="es" hidden>La oportunidad</div>
-    <h2 class="title" data-lang="en">A flybridge Azimut in Cartagena</h2>
-    <h2 class="title" data-lang="es" hidden>Un flybridge Azimut en Cartagena</h2>
-    <div class="op-grid">
-      <ul class="op-list" data-lang="en">
-        <li>Azimut 43 Flybridge, built 2008, located in Cartagena, Colombia.</li>
-        <li>Refreshed interiors and galley.</li>
-        <li>Hull in very good visible condition; antifouling done May 2026.</li>
-        <li>Shore power, air conditioning and freezer in use.</li>
-      </ul>
-      <ul class="op-list" data-lang="es" hidden>
-        <li>Azimut 43 Flybridge, construido en 2008, en Cartagena, Colombia.</li>
-        <li>Interiores y cocina renovados.</li>
-        <li>Casco en muy buen estado visible; antifouling hecho en mayo de 2026.</li>
-        <li>Conexión a tierra, aire acondicionado y congelador en uso.</li>
-      </ul>
+<section id="yacht">
+  <div class="wrap yacht-grid">
+    <div>
+      <div class="kicker"><span data-lang="en">The yacht</span><span data-lang="es" hidden>El yacht</span></div>
+      <h2 class="title" data-lang="en">Italian design, space on every deck.</h2>
+      <h2 class="title" data-lang="es" hidden>Diseño italiano y espacio en cada cubierta.</h2>
+      <p class="lede" data-lang="en">A 2008 Azimut 43 Flybridge with all the presence of Italian design. A generous flybridge, a salon framed by wide windows, a master cabin, bathrooms with shower and warm wood joinery throughout. The galley, furniture and interior upholstery were renovated and have seen little use since.</p><p class="lede" data-lang="es" hidden>Un Azimut 43 Flybridge de 2008 con toda la presencia del diseño italiano. Flybridge amplio, salón rodeado de ventanales, camarote principal, baños con ducha y carpintería en madera en todo el interior. La cocina, el mobiliario y la tapicería interior fueron renovados y han tenido poco uso desde entonces.</p>
     </div>
+    <img src="img/04_salon_hacia_popa.jpg" alt="Salon aboard MISS TACHIRA" loading="lazy">
   </div>
 </section>
 
-<section id="particulars" style="background:var(--paper-2); padding-block:48px;">
+<section class="features" id="features">
   <div class="wrap">
-    <div class="kicker" data-lang="en">Key particulars</div>
-    <div class="kicker" data-lang="es" hidden>Datos clave</div>
-    <h2 class="title" style="font-size:22px;" data-lang="en">Specifications</h2>
-    <h2 class="title" style="font-size:22px;" data-lang="es" hidden>Especificaciones</h2>
-    <div class="particulars-card">
-      <table class="spec" data-lang="en">
-        <tr><td>Model / year</td><td>Azimut 43 Flybridge / 2008</td></tr>
-        <tr><td>Location</td><td>Cartagena, Colombia</td></tr>
-        <tr><td>Hull</td><td>Fiberglass, 12.92 m</td></tr>
-        <tr><td>Beam</td><td>4.20 m</td></tr>
-        <tr><td>Engines</td><td>2 × Cummins QSB5.9-425 HO, diesel</td></tr>
-        <tr><td>Power (documented)</td><td>420 HP each / 840 HP total</td></tr>
-        <tr><td>Engine hours</td><td>Unknown</td></tr>
-        <tr><td>Asking price</td><td>USD 145,000</td></tr>
-      </table>
-      <table class="spec" data-lang="es" hidden>
-        <tr><td>Modelo / año</td><td>Azimut 43 Flybridge / 2008</td></tr>
-        <tr><td>Ubicación</td><td>Cartagena, Colombia</td></tr>
-        <tr><td>Casco</td><td>Fibra de vidrio, 12.92 m</td></tr>
-        <tr><td>Manga</td><td>4.20 m</td></tr>
-        <tr><td>Motores</td><td>2 × Cummins QSB5.9-425 HO, diésel</td></tr>
-        <tr><td>Potencia (documentada)</td><td>420 HP cada uno / 840 HP total</td></tr>
-        <tr><td>Horas de motor</td><td>Desconocidas</td></tr>
-        <tr><td>Precio solicitado</td><td>USD 145,000</td></tr>
-      </table>
+    <div class="kicker"><span data-lang="en">Features</span><span data-lang="es" hidden>Características</span></div>
+    <h2 class="title" data-lang="en">At a glance</h2>
+    <h2 class="title" data-lang="es" hidden>De un vistazo</h2>
+    <div class="tiles">
+<div class="tile"><div class="tile-v">2008</div><div class="tile-k"><span data-lang="en">Year</span><span data-lang="es" hidden>Año</span></div></div>
+<div class="tile"><div class="tile-v">12.92 m</div><div class="tile-k"><span data-lang="en">Hull length</span><span data-lang="es" hidden>Eslora de casco</span></div></div>
+<div class="tile"><div class="tile-v">4.20 m</div><div class="tile-k"><span data-lang="en">Beam</span><span data-lang="es" hidden>Manga</span></div></div>
+<div class="tile"><div class="tile-v">840 HP</div><div class="tile-k"><span data-lang="en">2 × Cummins diesel</span><span data-lang="es" hidden>2 × Cummins diésel</span></div></div>
+<div class="tile"><div class="tile-v">12</div><div class="tile-k"><span data-lang="en">Registered capacity</span><span data-lang="es" hidden>Capacidad registrada</span></div></div>
     </div>
+    <ul class="amen">
+<li><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></li>
+<li><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></li>
+<li><span data-lang="en">Renovated galley</span><span data-lang="es" hidden>Cocina renovada</span></li>
+<li><span data-lang="en">Master cabin</span><span data-lang="es" hidden>Camarote principal</span></li>
+<li><span data-lang="en">Bathrooms with shower</span><span data-lang="es" hidden>Baños con ducha</span></li>
+<li><span data-lang="en">Cockpit</span><span data-lang="es" hidden>Cockpit</span></li>
+<li><span data-lang="en">Swim platform</span><span data-lang="es" hidden>Plataforma de baño</span></li>
+<li><span data-lang="en">Lower helm station</span><span data-lang="es" hidden>Puesto de mando interior</span></li>
+<li><span data-lang="en">Flybridge helm station</span><span data-lang="es" hidden>Puesto de mando en flybridge</span></li>
+<li><span data-lang="en">Air conditioning</span><span data-lang="es" hidden>Aire acondicionado</span></li>
+<li><span data-lang="en">Shore power</span><span data-lang="es" hidden>Conexión a tierra</span></li>
+<li><span data-lang="en">Freezer</span><span data-lang="es" hidden>Congelador</span></li>
+<li><span data-lang="en">Renovated interior furnishings</span><span data-lang="es" hidden>Mobiliario y tapicería interior renovados</span></li>
+<li><span data-lang="en">Wood joinery throughout</span><span data-lang="es" hidden>Carpintería en madera</span></li>
+<li><span data-lang="en">Antifouling · May 2026</span><span data-lang="es" hidden>Antifouling · mayo 2026</span></li>
+    </ul>
   </div>
 </section>
 
 <section id="gallery">
   <div class="wrap">
-    <div class="kicker" data-lang="en">Gallery</div>
-    <div class="kicker" data-lang="es" hidden>Galería</div>
+    <div class="kicker"><span data-lang="en">Gallery</span><span data-lang="es" hidden>Galería</span></div>
     <h2 class="title" data-lang="en">Aboard MISS TACHIRA</h2>
     <h2 class="title" data-lang="es" hidden>A bordo de MISS TACHIRA</h2>
-    <div class="gal-groups fade-in">
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Exterior</div>
-        <div class="gal-group-label" data-lang="es" hidden>Exterior</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/01_exterior_principal_estribor.jpg" alt="Starboard side profile, marina"></div><figcaption><span data-lang="en">Starboard profile</span><span data-lang="es" hidden>Perfil de estribor</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/03_proa.jpg" alt="Bow"></div><figcaption><span data-lang="en">Bow</span><span data-lang="es" hidden>Proa</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/02_popa.jpg" alt="Stern and swim platform"></div><figcaption><span data-lang="en">Stern &amp; swim platform</span><span data-lang="es" hidden>Popa y plataforma de baño</span></figcaption></figure>
-        </div>
-      </div>
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Flybridge</div>
-        <div class="gal-group-label" data-lang="es" hidden>Flybridge</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/08_flybridge.jpg" alt="Flybridge"></div><figcaption><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/15_pasillo_exterior_estribor.jpg" alt="Starboard side deck"></div><figcaption><span data-lang="en">Side deck</span><span data-lang="es" hidden>Pasillo exterior</span></figcaption></figure>
-        </div>
-      </div>
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Salon</div>
-        <div class="gal-group-label" data-lang="es" hidden>Salón</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/04_salon_hacia_popa.jpg" alt="Salon, view aft"></div><figcaption><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/05_salon_hacia_mando.jpg" alt="Salon toward helm"></div><figcaption><span data-lang="en">Salon</span><span data-lang="es" hidden>Salón</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/07_mando.jpg" alt="Lower helm station"></div><figcaption><span data-lang="en">Helm station</span><span data-lang="es" hidden>Puesto de mando</span></figcaption></figure>
-        </div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame tall"><img src="img/06_salon_babor.jpg" alt="Salon, port side"></div><figcaption><span data-lang="en">Salon — port side</span><span data-lang="es" hidden>Salón — banda de babor</span></figcaption></figure>
-        </div>
-      </div>
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Galley</div>
-        <div class="gal-group-label" data-lang="es" hidden>Cocina</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/09_cocina.jpg" alt="Galley"></div><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/10_cocina_vista_general.jpg" alt="Galley, general view"></div><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure>
-        </div>
-      </div>
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Cabins</div>
-        <div class="gal-group-label" data-lang="es" hidden>Camarotes</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame"><img src="img/11_cabina.jpg" alt="Cabin"></div><figcaption><span data-lang="en">Cabin</span><span data-lang="es" hidden>Camarote</span></figcaption></figure>
-          <figure class="gal"><div class="frame"><img src="img/12_cabina_almacenamiento.jpg" alt="Cabin storage"></div><figcaption><span data-lang="en">Cabin</span><span data-lang="es" hidden>Camarote</span></figcaption></figure>
-        </div>
-      </div>
-
-      <div class="gal-group">
-        <div class="gal-group-label" data-lang="en">Bathrooms</div>
-        <div class="gal-group-label" data-lang="es" hidden>Baños</div>
-        <div class="gal-row">
-          <figure class="gal"><div class="frame tall"><img src="img/13_bano.jpg" alt="Head"></div><figcaption><span data-lang="en">Head</span><span data-lang="es" hidden>Baño</span></figcaption></figure>
-          <figure class="gal"><div class="frame tall"><img src="img/14_ducha.jpg" alt="Shower detail"></div><figcaption><span data-lang="en">Head</span><span data-lang="es" hidden>Baño</span></figcaption></figure>
-        </div>
-      </div>
-
-    </div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Exterior</span><span data-lang="es" hidden>Exterior</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="0" aria-label="Starboard profile" style="aspect-ratio:1.3333"><img src="img/01_exterior_principal_estribor.jpg" alt="Starboard profile" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Starboard profile</span><span data-lang="es" hidden>Perfil de estribor</span></figcaption></figure><figure class="shot port" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="1" aria-label="Side deck" style="aspect-ratio:0.7508"><img src="img/15_pasillo_exterior_estribor.jpg" alt="Side deck" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Side deck</span><span data-lang="es" hidden>Pasillo lateral</span></figcaption></figure></div><div class="jrow" style="max-width:1075px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="2" aria-label="Foredeck" style="aspect-ratio:1.3333"><img src="img/03_proa.jpg" alt="Foredeck" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Foredeck</span><span data-lang="es" hidden>Proa</span></figcaption></figure><figure class="shot port" style="flex:0.5619 1 0;"><button type="button" class="shot-btn" data-idx="3" aria-label="Stern and swim platform" style="aspect-ratio:0.5619"><img src="img/02_popa.jpg" alt="Stern and swim platform" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Stern and swim platform</span><span data-lang="es" hidden>Popa y plataforma de baño</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></h3><div class="jrow" style="max-width:995px"><figure class="shot land" style="flex:1.7778 1 0;"><button type="button" class="shot-btn" data-idx="4" aria-label="Flybridge" style="aspect-ratio:1.7778"><img src="img/08_flybridge.jpg" alt="Flybridge" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Flybridge</span><span data-lang="es" hidden>Flybridge</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Salon &amp; helm</span><span data-lang="es" hidden>Salón y puesto de mando</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="5" aria-label="Salon, looking aft" style="aspect-ratio:1.3333"><img src="img/04_salon_hacia_popa.jpg" alt="Salon, looking aft" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon, looking aft</span><span data-lang="es" hidden>Salón hacia popa</span></figcaption></figure><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="6" aria-label="Salon, looking forward" style="aspect-ratio:1.3333"><img src="img/05_salon_hacia_mando.jpg" alt="Salon, looking forward" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon, looking forward</span><span data-lang="es" hidden>Salón hacia proa</span></figcaption></figure></div><div class="jrow" style="max-width:1080px"><figure class="shot port" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="7" aria-label="Salon seating" style="aspect-ratio:0.7508"><img src="img/06_salon_babor.jpg" alt="Salon seating" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Salon seating</span><span data-lang="es" hidden>Sofá del salón</span></figcaption></figure><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="8" aria-label="Lower helm station" style="aspect-ratio:1.3333"><img src="img/07_mando.jpg" alt="Lower helm station" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Lower helm station</span><span data-lang="es" hidden>Puesto de mando interior</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="9" aria-label="Galley" style="aspect-ratio:1.3333"><img src="img/09_cocina.jpg" alt="Galley" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure><figure class="shot land" style="flex:1.3318 1 0;"><button type="button" class="shot-btn" data-idx="10" aria-label="Galley" style="aspect-ratio:1.3318"><img src="img/10_cocina_vista_general.jpg" alt="Galley" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Galley</span><span data-lang="es" hidden>Cocina</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Master cabin</span><span data-lang="es" hidden>Camarote principal</span></h3><div class="jrow" style="max-width:1080px"><figure class="shot land" style="flex:1.3333 1 0;"><button type="button" class="shot-btn" data-idx="11" aria-label="Master cabin" style="aspect-ratio:1.3333"><img src="img/11_cabina.jpg" alt="Master cabin" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Master cabin</span><span data-lang="es" hidden>Camarote principal</span></figcaption></figure><figure class="shot land" style="flex:1.3318 1 0;"><button type="button" class="shot-btn" data-idx="12" aria-label="Master cabin wardrobe" style="aspect-ratio:1.3318"><img src="img/12_cabina_almacenamiento.jpg" alt="Master cabin wardrobe" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Master cabin wardrobe</span><span data-lang="es" hidden>Clóset del camarote principal</span></figcaption></figure></div></div>
+<div class="space"><h3 class="space-h"><span data-lang="en">Bathroom</span><span data-lang="es" hidden>Baño</span></h3><div class="jrow pp" style="max-width:854px"><figure class="shot port" style="flex:0.7500 1 0;"><button type="button" class="shot-btn" data-idx="13" aria-label="Bathroom" style="aspect-ratio:0.7500"><img src="img/13_bano.jpg" alt="Bathroom" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Bathroom</span><span data-lang="es" hidden>Baño</span></figcaption></figure><figure class="shot port" style="flex:0.7508 1 0;"><button type="button" class="shot-btn" data-idx="14" aria-label="Shower" style="aspect-ratio:0.7508"><img src="img/14_ducha.jpg" alt="Shower" loading="lazy" decoding="async"></button><figcaption><span data-lang="en">Shower</span><span data-lang="es" hidden>Ducha</span></figcaption></figure></div></div>
   </div>
 </section>
 
-<div class="sounding"></div>
-
-<section class="log-section" id="condition">
+<section class="specs" id="specs">
   <div class="wrap">
-    <div class="kicker" data-lang="en">Pending work</div>
-    <div class="kicker" data-lang="es" hidden>Trabajo pendiente</div>
-    <h2 class="title" data-lang="en">What the price reflects</h2>
-    <h2 class="title" data-lang="es" hidden>Qué refleja el precio</h2>
-    <p data-lang="en">Both main engines are currently out of service, with injectors removed pending reinstallation, and propellers removed for replacement. No sea trial has been performed. This is the work the asking price reflects.</p>
-    <p data-lang="es" hidden>Ambos motores principales están actualmente fuera de servicio, con los inyectores retirados pendientes de reinstalación, y las hélices retiradas para su reemplazo. No se ha realizado prueba de mar. Este es el trabajo que refleja el precio solicitado.</p>
+    <div class="kicker"><span data-lang="en">Details</span><span data-lang="es" hidden>Ficha técnica</span></div>
+    <h2 class="title" data-lang="en">Specifications</h2>
+    <h2 class="title" data-lang="es" hidden>Especificaciones</h2>
+    <div class="spec-card"><table>
+<tr><th scope="row"><span data-lang="en">Model</span><span data-lang="es" hidden>Modelo</span></th><td><span data-lang="en">Azimut 43 Flybridge</span><span data-lang="es" hidden>Azimut 43 Flybridge</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Year</span><span data-lang="es" hidden>Año</span></th><td><span data-lang="en">2008</span><span data-lang="es" hidden>2008</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Location</span><span data-lang="es" hidden>Ubicación</span></th><td><span data-lang="en">Cartagena, Colombia</span><span data-lang="es" hidden>Cartagena, Colombia</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Hull</span><span data-lang="es" hidden>Casco</span></th><td><span data-lang="en">Fiberglass</span><span data-lang="es" hidden>Fibra de vidrio</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Hull length</span><span data-lang="es" hidden>Eslora de casco</span></th><td><span data-lang="en">12.92 m</span><span data-lang="es" hidden>12.92 m</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Beam</span><span data-lang="es" hidden>Manga</span></th><td><span data-lang="en">4.20 m</span><span data-lang="es" hidden>4.20 m</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Engines</span><span data-lang="es" hidden>Motores</span></th><td><span data-lang="en">2 × Cummins QSB5.9-425 HO, diesel</span><span data-lang="es" hidden>2 × Cummins QSB5.9-425 HO, diésel</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Power</span><span data-lang="es" hidden>Potencia</span></th><td><span data-lang="en">420 HP each · 840 HP total</span><span data-lang="es" hidden>420 HP cada uno · 840 HP total</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Registered capacity</span><span data-lang="es" hidden>Capacidad registrada</span></th><td><span data-lang="en">12 persons</span><span data-lang="es" hidden>12 personas</span></td></tr>
+<tr><th scope="row"><span data-lang="en">Price</span><span data-lang="es" hidden>Precio</span></th><td><span data-lang="en">USD 145,000</span><span data-lang="es" hidden>USD 145,000</span></td></tr>
+    </table></div>
+    <p class="note" data-lang="en">The yacht requires work on her propulsion system and some equipment before returning to navigation. Her current condition is reflected in the price. Documentation and technical information are available on request.</p>
+    <p class="note" data-lang="es" hidden>La embarcación requiere trabajo en su sistema de propulsión y algunos equipos antes de volver a navegar. Su condición actual está reflejada en el precio. Documentación e información técnica disponibles para interesados.</p>
   </div>
 </section>
 
 <section class="closing" id="contact">
   <div class="wrap">
-    <div class="kicker" data-lang="en">Get in touch</div>
-    <div class="kicker" data-lang="es" hidden>Contáctenos</div>
-    <h2 class="title" data-lang="en">Available to view in Cartagena.</h2>
-    <h2 class="title" data-lang="es" hidden>Disponible para conocer en Cartagena.</h2>
-    <div class="price-line">USD 145,000</div>
-    <div class="cta-row" data-lang="en">
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
-        Discuss on WhatsApp
-      </a>
-    </div>
-    <div class="cta-row" data-lang="es" hidden>
-      <a class="cta cta-primary" href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg>
-        Hablar por WhatsApp
-      </a>
-    </div>
+    <div class="kicker">MISS TACHIRA · Azimut 43 Flybridge</div>
+    <h2 data-lang="en">Available to view in Cartagena.</h2>
+    <h2 data-lang="es" hidden>Disponible para conocer en Cartagena.</h2>
+    <div class="price">USD 145,000</div>
+    <a class="cta" data-lang="en" href="https://wa.me/573222481135?text=Hi%2C%20I%20saw%20the%20Azimut%2043%20in%20Cartagena%20and%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Chat on WhatsApp</span></a><a class="cta" data-lang="es" hidden href="https://wa.me/573222481135?text=Hola%2C%20vi%20el%20Azimut%2043%20en%20Cartagena%20y%20me%20interesa%20conocer%20m%C3%A1s." target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.37-.49.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.08 1-2.37.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.49-.14.14-.28.29-.12.57.16.28.71 1.17 1.52 1.9 1.05.94 1.93 1.23 2.21 1.37.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.18-.28.36-.23.61-.14.24.09 1.55.73 1.82.87.26.13.44.19.5.3.07.11.07.63-.17 1.31Z"/></svg><span>Hablar por WhatsApp</span></a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span>MISS TACHIRA · 2008 Azimut 43 Flybridge · Cartagena, Colombia · WhatsApp +57 322 248 1135</span>
-    <span data-lang="en">Sold AS IS / WHERE IS. No representation of seaworthiness, operability or repair cost is made.</span>
-    <span data-lang="es" hidden>Se vende AS IS / EN EL ESTADO Y LUGAR EN QUE SE ENCUENTRA. No se hace ninguna declaración sobre navegabilidad, operatividad o costo de reparación.</span>
+    <span>MISS TACHIRA · Azimut 43 Flybridge 2008 · Cartagena, Colombia · WhatsApp +57 322 248 1135</span>
+    <span data-lang="en">Sold as is, where is.</span>
+    <span data-lang="es" hidden>Se vende en el estado y lugar en que se encuentra (as is).</span>
   </div>
 </footer>
 
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo">
+  <button type="button" class="x" aria-label="Close">&#x2715;</button>
+  <button type="button" class="prev" aria-label="Previous">&#x2039;</button>
+  <img id="lb-img" alt="">
+  <div class="lb-cap" id="lb-cap"></div>
+  <button type="button" class="next" aria-label="Next">&#x203A;</button>
+</div>
+
 <script>
 (function(){
+  var LB = [{"src": "img/01_exterior_principal_estribor.jpg", "en": "Starboard profile", "es": "Perfil de estribor"}, {"src": "img/15_pasillo_exterior_estribor.jpg", "en": "Side deck", "es": "Pasillo lateral"}, {"src": "img/03_proa.jpg", "en": "Foredeck", "es": "Proa"}, {"src": "img/02_popa.jpg", "en": "Stern and swim platform", "es": "Popa y plataforma de baño"}, {"src": "img/08_flybridge.jpg", "en": "Flybridge", "es": "Flybridge"}, {"src": "img/04_salon_hacia_popa.jpg", "en": "Salon, looking aft", "es": "Salón hacia popa"}, {"src": "img/05_salon_hacia_mando.jpg", "en": "Salon, looking forward", "es": "Salón hacia proa"}, {"src": "img/06_salon_babor.jpg", "en": "Salon seating", "es": "Sofá del salón"}, {"src": "img/07_mando.jpg", "en": "Lower helm station", "es": "Puesto de mando interior"}, {"src": "img/09_cocina.jpg", "en": "Galley", "es": "Cocina"}, {"src": "img/10_cocina_vista_general.jpg", "en": "Galley", "es": "Cocina"}, {"src": "img/11_cabina.jpg", "en": "Master cabin", "es": "Camarote principal"}, {"src": "img/12_cabina_almacenamiento.jpg", "en": "Master cabin wardrobe", "es": "Clóset del camarote principal"}, {"src": "img/13_bano.jpg", "en": "Bathroom", "es": "Baño"}, {"src": "img/14_ducha.jpg", "en": "Shower", "es": "Ducha"}];
+  var cur = 'en';
   function setLang(lang){
-    try{
-      document.querySelectorAll('[data-lang]').forEach(function(el){
-        el.hidden = el.getAttribute('data-lang') !== lang;
-      });
-      document.querySelectorAll('.lang-switch').forEach(function(btn){
-        btn.classList.toggle('active', btn.getAttribute('data-set-lang') === lang);
-      });
-      document.documentElement.setAttribute('lang', lang);
-    }catch(e){}
+    cur = lang;
+    document.querySelectorAll('[data-lang]').forEach(function(el){ el.hidden = el.getAttribute('data-lang') !== lang; });
+    document.querySelectorAll('.lang-switch').forEach(function(b){ b.classList.toggle('active', b.getAttribute('data-set-lang') === lang); });
+    document.documentElement.lang = lang;
+    try{ localStorage.setItem('mt-lang', lang); }catch(e){}
   }
-  document.querySelectorAll('.lang-switch').forEach(function(btn){
-    btn.addEventListener('click', function(){ setLang(btn.getAttribute('data-set-lang')); });
+  document.querySelectorAll('.lang-switch').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.getAttribute('data-set-lang')); });
   });
-  setLang('en');
+  var start = 'en';
+  try{
+    var saved = localStorage.getItem('mt-lang');
+    if(saved === 'en' || saved === 'es'){ start = saved; }
+    else if((navigator.language || '').toLowerCase().indexOf('es') === 0){ start = 'es'; }
+  }catch(e){ if((navigator.language || '').toLowerCase().indexOf('es') === 0){ start = 'es'; } }
+  var q = (location.search.match(/[?&]lang=(en|es)/) || [])[1];
+  if(q){ start = q; }
+  setLang(start);
+
+  var lb = document.getElementById('lb'), img = document.getElementById('lb-img'), cap = document.getElementById('lb-cap'), i = 0;
+  function show(n){ i = (n + LB.length) % LB.length; img.src = LB[i].src; img.alt = LB[i][cur]; cap.textContent = LB[i][cur]; }
+  function open(n){ show(n); lb.hidden = false; document.body.style.overflow = 'hidden'; lb.querySelector('.x').focus(); }
+  function close(){ lb.hidden = true; document.body.style.overflow = ''; }
+  document.querySelectorAll('.shot-btn').forEach(function(b){ b.addEventListener('click', function(){ open(+b.getAttribute('data-idx')); }); });
+  lb.querySelector('.x').addEventListener('click', close);
+  lb.querySelector('.prev').addEventListener('click', function(){ show(i - 1); });
+  lb.querySelector('.next').addEventListener('click', function(){ show(i + 1); });
+  lb.addEventListener('click', function(e){ if(e.target === lb){ close(); } });
+  document.addEventListener('keydown', function(e){
+    if(lb.hidden) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowLeft') show(i - 1);
+    if(e.key === 'ArrowRight') show(i + 1);
+  });
 })();
 </script>
 </body>
